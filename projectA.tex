@@ -1,0 +1,383 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\graphicspath{ {images/} }
+\usetheme{Madrid}
+\usecolortheme{wolverine}
+
+\title[Project A]
+{Axion Searches with Microwave-Cavity}
+\author[Hunc]{Hu Naichao}
+\institute[SPE]{Physics Department\\
+School of Physics and Engineering\\Sun Yat-Sen University}
+\date{May 2014}
+
+\logo{\includegraphics[height=1.5cm]{ulogo}}
+
+\begin{document}
+
+\frame{\titlepage}
+
+%genarates table of contents
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+%genarates content of current section
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+%main part
+%section I========================================================
+\section{Overview}
+\begin{frame}
+\frametitle{Brief Introduction}
+
+\begin{wrapfigure}{r}{0.25\textwidth}
+    \centering
+    \includegraphics[width=0.25\textwidth]{NPieCh}
+    \caption{Breakdown of our universe}
+\end{wrapfigure}
+
+The advent of precision cosmology provides better understanding of where we stands.
+\begin{itemize}
+\item <1->The Universe is flat to high degree and\\ $\Omega_{dm} \simeq 0.3$
+\item <2->CDM candidates emerge as necessary \\component to explain LSS, among which\\ axions is a "usual suspects"
+\item <3->More than 80\% of matter is DM 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Experimental Evolution}
+\begin{block}{Note}
+We assume the axions exists and dominate our galactic halo. This  presentation is dedicated to \alert{macrowave cavity} searches for axions.
+\end{block}
+An elegant technique has been developed by Sikivie, used and modified by many experiments.
+\begin{itemize}
+\item<1->Conventional amplifier
+Based on heterostructure field-effect transistors(HFET's), aka, high-electron-mobility transistors(HEMT).\\
+Noise $\sim 1.5 K$ at $GHz$ range frequency.
+    \begin{itemize}
+    \item Sikivie macrowave cavity experiment
+    \item The U.S. large-scale search (ADMX 1995)
+    \end{itemize}
+\item<2-> High-gain gigaherz dc Superconducting Quantum Interference Device (SQUID)\\
+Noise $\sim 50 mK$ at $600-MHz$ frequency (about twice SQL).
+       %a possible 3 generation search ex
+\item<3->Single photon detector
+Rydberg-atom single-quantum detector.\\
+Noise as low as $\sim 12 mK$, eviding SQL entirely.
+    \begin{itemize}
+    \item The CARRACK1 detector
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+%section II=======================================================
+\section{The Axion Theory}
+%page 1
+\begin{frame}{From Strong-CP Problem}
+Postulated roughly 4 decades ago, axion elegantly solves the "strong-CP" problem by presenting a quasisymmetry $U_{PQ}(1)$, i.e.
+$$\bar{\theta} = \theta - arg \, det(m_1,m_2, \ldots, m_n) - \frac{a(x)}{f_a},$$
+where $a(x)$ is the axion field, $f_a = v_a/N$ is called the axion decay constant, $v_a$ is the vacuum expectation value,
+which spontaneously breaks $U_{PQ}(1)$, and $N$ is an integer that expresses the color anomaly of $U_{PQ}(1)$ symmetry.
+\\
+\vspace{1cm}
+The nonperturbative effects then produce a effective potential $V(\bar{\theta})$, whose minimum is at $\bar{\theta} = 0$.
+\end{frame}
+%page 2
+\begin{frame}{Axion Parameters}
+The axion mass is given in terms of $f_a$ by$$
+m_a \simeq 0.6 eV \frac{10^7GeV}{f_a}.$$
+All the axion couplings are inversely proportional to $f_a$.
+\\One in particular is the axion coupling to two
+photons:$$
+\mathcal{L}_{a \gamma \gamma} = -(\frac{\alpha}{\pi} \frac{g_{\gamma}}{f_a}) a \vec{E} \vec{B},$$
+where $\vec{E}$ and $\vec{B}$ are the usual electric and magnetic
+fields, $\alpha$ is the fine-structure constant, and $g_{\gamma}$
+is a modeldependent coefficient of order 1.
+\end{frame}
+%page 3 
+\begin{frame}{A Brief on Constraints}
+A priori, the value of $v_a$, and thus $m_a$, is arbitrary. At present, the combined limits rule out axions heavier than about $3 \times 10^{-3}eV$.
+\begin{itemize}
+\item If the axion is heavier than $1 MeV$, and decays quickly into $e^+ e^-$ (lifetime of order $10^{-11} sec$ or less), then it is ruled out by negative searches for rare particle decays such as $\pi^+ \rightarrow a(e^+ e^-)+e^++\nu_e$, whose rates are well known.
+\item If lifetime is greater than $10^{-11} sec$, they are severely constrained by negative searches in beam dumps. Since in a beam dump, many different process involving independent couplings should add up incoherently and can't all vanish. Many such experiment thus ruled out mass range down to about $50 keV$. 
+\end{itemize}
+\end{frame}
+%page 4
+\begin{frame}{A Brief on Constraints}
+\begin{itemize}
+\item Emission of no-rescattering axions provides an efficient way of cooling stars. Thus the abundance of red giants ruled out the mass range $0.5 eV \lesssim m_a \lesssim 200keV$ for KSVZ type. This range extends as the coupling to $e^-$ grows.
+\item The terrestrial neutrino signal from SN 1987a eliminates the range $3 \times 10^{-3} eV \lesssim m_a \lesssim 2 eV$. The observation is consistent with theoretical expectations based on the premise that the core cools solely by emission of neutrinos suggests that axions need to be very weekly coupled. (NB: This constraint is relatively axion model independent.)
+\end{itemize}
+\end{frame}
+%page 5
+\begin{frame}{Axions and Cosmology}
+At a critical time $t_1 = m_a^{-1}(t_1)$, temperature of order $f_a (\sim 1 GeV)$ , a phase transition occurs in which the $U_{PQ}(1)$ symmetry becomes spontaneously broken. This is called the PQ phase transition, when the nonperturbative effects that produce the effective potential $V(\bar{\theta})$ are suppressed, the axion is massless,
+and all values of $\langle a(x) \rangle$ are equally likely. After the transition, the axion field starts to oscillate in response to the axion mass turn-on.\\
+We distinguish two cases:
+\begin{enumerate}
+\item Inflation occurs with reheat temperature less than the PQ transition temperature;
+\item inflation occurs with reheat temperature higher than the PQ transition temperature (equivalently, for our purposes, inflation does not occur at all). 
+\end{enumerate}
+\end{frame}
+%page 6
+\begin{frame}{Case I}
+Homogenized by inflation, the initial amplitude depends on how far from zero the axion field is at $t_1$. The contribution to $\Omega_0$ in terms of $\rho_c$ is$$
+\Omega_a = \frac{\rho_a(t_0)}{\rho_c} = \frac{1}{6}\alpha^2(t_1)(\frac{f_a}{10^{12}GeV})^{7/6}(\frac{0.7}{h_{100}})^2,$$
+where $\alpha(t_1) = a(t_1)/f_a$ is the initial misaligment angle.\\
+\vspace{1cm}
+NB: $\Omega_a$ can be supressed if $a(t_1) \sim 0$. \\
+NNB: This contribution is also called \alert{vacuum realignment}.
+\end{frame}
+%page 7
+\begin{frame}{Case II}
+An reasonable assumption, in this case, would be after $t_1$, each axion string turns into boundary of \alert{1} domain wall. Thus  contributions to $\Omega_0$ are as follows: (1)from axions that were radiated before $t_1$; (2)from the decay of walls after $t_1$; (3)from vacuum realignment.\\
+Now if we introduce a parameter $\xi$ to discribe the average distance between axion strings at time $t$ as $\xi t$, and if we take $\xi = 1$, we have\begin{equation*}
+\begin{split}
+\Omega_a &= \Omega^{vac}+\Omega^{d.w.}+\Omega^{str}\\
+&= (0.5-3.0)(\frac{f_a}{10^{12}})^{7/6}(\frac{0.7}{h_{100}})^2
+\end{split}
+\end{equation*}
+\end{frame}
+%page 8
+\begin{frame}{Summary of Constraints}
+If we plug in known $\Omega_0$ as $\Omega_a$, an open mass range at $1-100 \mu eV$ is obtained.\\
+Combining privious constraints, we have the following fig:
+\begin{figure}
+\centering
+\includegraphics{range}
+\caption{Ranges of axion mass $m_a$ (or $f_a$)}
+\end{figure}
+\end{frame}
+%page 9
+%\begin{frame}{Phase-space structure of halo dark-matter axions}
+%not understood 
+%\end{frame}
+
+%section III======================================================
+\section{The Sikivie Experiment}
+%page 1
+\begin{frame}{Primakoff Effect}
+The Primakoff effect is the resonant production of neutral pseudoscalar mesons by high-energy photons interacting with an atomic nucleus. \\
+For axions, in a strong magnetic field, their convertion to photons can be detected theoretically.  
+\begin{figure}
+    \caption{Feynman diagram for Primakoff effect, where $e$ for electrons, $I$ for ions.}
+    \centering
+    \includegraphics[width=0.5\textwidth]{prima}
+\end{figure}
+\end{frame}
+%page 2
+\begin{frame}{General Detector Properties}
+When a frequency $\omega=2 \pi f$ of a cavity mode equals $m_a$, axions convert resonantly into photons. The power from axion-to-photon conversion
+on resonance is found to be
+\begin{equation*}
+\begin{split}
+P_a &= (\frac{\alpha}{\pi} \frac{g_\gamma}{f_a})^2 V B_0^2 \rho_a C \frac{1}{m_a} Min(Q_L,Q_a)\\
+&=0.5\times10^{-26}W(\frac{V}{500 liter})(\frac{B_0}{7 T})^2 C (\frac{g_\gamma}{0.36})^2\\
+&\times (\frac{\rho_a}{\frac{1}{2}\times10^{-24}g/cm^3})\times (\frac{m_a}{2\pi(GHz)})Min(Q_L,Q_a),
+\end{split}
+\end{equation*}
+where $V$ is the volume if the cavity, $Q_L$ is the cavity's loaded quality factor, $Q_a = 10^{16}$ is the Q factor for galactic halo axion signal, $\rho_a$ is the density of galactic halo axions on Earth, $C$ is a mode-dependent form factor.\\
+For a cylindrical cavity with  the $TM_{010}$ mode yields the largest form factor with $C \approx 0.69$.
+\end{frame}
+%page 3
+\begin{frame}{General Detector Properties}
+As a cavity scans over the
+possible axion mass range, the scan rate (aka, SNR) is determined
+by the amount of time it takes for a possible axion signal
+to be detected over the microwave cavity’s intrinsic noise, or mathematically,$$
+SNR = \frac{P_a}{\bar{P_N}}\sqrt{Bt} = \frac{P_a}{k_BT_S}\sqrt{\frac{t}{B}},$$
+where $\bar{P_N}= k_BBT_S$ is the cavity noise power, $B$ is the bandwidth, and $T_S$
+is the sum of the physical
+temperature of the cavity plus the noise temperature of
+the microwave receiver.\\
+At a given SNR, we have a useful logarithmic scan rate relation as follows,
+$$\frac{1}{f}\frac{df}{dt} \propto (B_0^2V)^2\frac{1}{T_S^2}.$$
+\end{frame}
+%page 4
+\begin{frame}{First-gerneration Experiments}
+First-g eneration microwave cavity experiments demonstrated the
+feasibility of the technique over a significant range of
+frequencies, but fell short in power sensitivity by 100–
+1000 in efforts to detect halo axions with plausible model couplings, due to their \alert{small volumes}
+and relatively \alert{high noise temperatures}.\\
+Brief of two experiment:
+\begin{enumerate}
+\item The Rochester-Brookhaven-Fermilab experiment\\
+\begin{itemize}
+\item peak central field of $8.5T$; $Q_W \sim 1.8 \times 10^5 \,(unloaded\,at\,2-3GHz,\,4.2K)$; higher-TM mode; continuously swept.
+\end{itemize}
+\item The University of Florida experiment
+\begin{itemize}
+\item peak central field of $8.6T$; $Q_W \sim 1.6 \times 10^5 \,(unloaded\,at\,1.5GHz,\,4.2K)$; tuned in steps
+\end{itemize}
+\end{enumerate}
+\end{frame}
+%page 5
+\begin{frame}{First-gerneration Experiments}
+\begin{itemize}
+\item RBF Expriment: Limits ($95\%$ C.L.) on $g_{a\gamma\gamma}^2 GeV^2$
+were established of $5.7 \times 10^{-28}$ at the lowmass end ($4.5\mu eV$) to $1.8\times10^{-25}$ on the high-mass end ($16\mu eV$).
+\item UF Expriment: Limits ($97.5\%$ C.L.) on $g_{a\gamma\gamma}^2 GeV^2$
+were established of $3.3 \times 10^{-28}$ at the lowmass end ($5.46-5.95\mu eV$) to $1.6\times10^{-27}$ on the high-mass end 
+($7.46-7.60\mu eV$).
+\end{itemize}
+\begin{figure} 
+    \centering
+    \includegraphics[height=3.4cm]{fger}
+    \caption{Exclusion regions for both expriments}
+\end{figure}
+\end{frame}
+
+%section IV=======================================================
+\section{The U.S. Large Scale Search}
+%page 1
+\begin{frame}{ADMX(1995)-Hardware}
+
+\end{frame}
+
+%section V========================================================
+\section{SQUID Amplifier \& Third Genaration Searching}
+
+%section VI=======================================================
+\section{Rydberg-Atom \& The CARRACK Experiment}
+% page 1
+\begin{frame}
+  \frametitle{The CARRACK Scheme}
+The CARRACK (Cosmic Axion Research using Rydberg Atoms in a resonant Cavity in
+Kyoto) experiment, rather than amplifiers, opted to develop a Rydberg-atom
+based single-quantum detector.
+  \begin{figure}
+    \centering
+    \includegraphics[width=10cm]{jsche}
+    \caption{General schematic of CARRACK experiment utilizing Rydberg atoms
+      to recover single photons generated in the microwave cavity.}
+  \end{figure}
+\end{frame}
+% page 2
+\begin{frame}
+  \frametitle{Rydberg Atoms}
+  Currently studied Rydberg atoms experimentally have $10<n<150$, which makes
+transitions between states fall in the microwave region ($\Delta E_{100} \sim 7GHz$).
+  \begin{itemize}
+  \item The energy levels of nonhydrogenic alkaki atoms, which depend on the angular momentum $\ell$
+    through the number $\delta_{\ell}$ are given
+    by $$E_{n,\ell}=\frac{\mathcal{R}}{(n-\delta_{\ell})^2}=\frac{\mathcal{R}}{\tilde{n}^2}.$$
+  \item As a result of the coupling of all of the atoms to the spatially
+    coherent field, a collective atom systom formed. Due to
+    which, the coupling $\Omega$ between the cavity and the atoms is replaced
+    by $\Omega_N=\Omega \sqrt{N}$.
+  \end{itemize}
+\end{frame}
+% page 3
+\begin{frame}
+  \frametitle{Field Ionization}
+not understood yet!  
+\end{frame}
+% page 4,5,6,7
+\begin{frame}
+  \frametitle{The CARRACK1 Detector}
+  The system has been utilized to search for axions at $10\mu eV$ mass region.
+  \begin{itemize}
+  \item<1-> Apparatus
+    \begin{onlyenv}<1>
+      \begin{itemize}
+      \item Two coupled cavity, one for convertion, the other detection
+      \item Cooled to roughly $15mk$
+      \end{itemize}
+    \end{onlyenv} 
+  \item<2-> Frequency tuning
+    \begin{onlyenv}<2>
+      \begin{itemize}
+      \item Accomplished by inserting dielectric rods along the axis 
+      \end{itemize}
+      \begin{figure}
+        \centering
+        \includegraphics[width=4cm]{crodf}
+        \caption{Effects of tuning rod in the convertion cavity}
+      \end{figure}
+     \end{onlyenv}
+   \item<3-> Magnetic-field shielding in the detection cavity
+     \begin{onlyenv}<3>
+       \begin{itemize}
+       \item Cancellation of a superconducting coil
+       \item Demagnetization via Meissner effect
+       \end{itemize}
+     \end{onlyenv}
+   \item<4-> Selective field-ionization detector
+     \begin{onlyenv}<4>
+       \begin{itemize}
+       \item the field-ionization electrodes, transport electrodes for
+         electrons and an electron multiplier
+       \item To make the mutiplier work properly, it needs to be heated to at
+         least $20K$. (Isolated by TI polymer.)
+       \end{itemize}
+     \end{onlyenv}
+  \end{itemize}
+\end{frame}
+% page 8,9
+\begin{frame}
+  \frametitle{The CARRACK2 Detector}
+  \begin{onlyenv}<1>
+  \begin{wrapfigure}{l}{0.33\textwidth}
+    \centering
+    %\caption{Schematic drawing of CARRACK2}
+    \includegraphics[width=0.33\textwidth]{carr2}
+  \end{wrapfigure}
+  Following experience obtained and more thorough theoretical and numerical
+  analysis, CARRACK2 was designed and constructed.
+  \begin{itemize}
+  \item The region to be covered is from $\sim 2\mu eV$ to $\sim 30\mu eV$.
+    \begin{itemize}
+    \item For masses less than $2\mu eV$, $n \geq 180$, field-ionization
+      method find it impossible to separate excited states.
+    \end{itemize}
+  \item Maximum field $7T$.
+  \end{itemize}
+  \end{onlyenv}
+  \begin{onlyenv}<2>
+    Major modifications are listed as follows:
+    \begin{enumerate}
+    \item Instead of $Rb$, Potassium Rydberg atoms will be used (reduce the
+      effect of Stark broadening in the microwave absorption process).
+    \item Guiding field method to avoid the rotation of electric field and
+      increase absorption probability of photons.
+    \item A spatially collimated bunched packets of Rydberg atomic beam (by
+      laser cooling) time varying electric field will be applied to compensate
+      the stray electric field.
+    \end{enumerate}
+  \end{onlyenv}
+\end{frame}
+
+%section VII======================================================
+\section{A Summary}
+%page 1
+\begin{frame}
+  \frametitle{Summary}
+  Although the expected axion convertion power is remarkably weak, the
+  technology development so far has been very promising.
+  \begin{itemize}
+  \item The new microstrip technique for coupling the signal into a SQUID has
+    extended the application of SQUID’s as high-gain amplifiers into the
+    $1-GHz$ region. And new SQUID layouts for higher frequency are under
+    consideration. 
+  \item Higher-frequency operation poses no new conceptual problem for the
+    Rydberg-atom single-quantum technique. 
+  \end{itemize}
+  Taking a optimistic point of view,  the technology will soon be in hand to
+  either find the axion with high probability, if it exists, or if not,
+  exclude it.
+\end{frame}
+%page 2
+\begin{frame}
+  \frametitle{Outlook}
+  
+\end{frame}
+\end{document}
