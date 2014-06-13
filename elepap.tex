@@ -7,7 +7,8 @@
 \graphicspath{ {images/} }
 \usepackage[backend=biber,
 style=phys,]{biblatex}
- 
+\usepackage[top=1in,bottom=1in,left=1.25in,right=1.25in]{geometry}
+
 \addbibresource{elex.bib}
 
 \setCJKmainfont{simsun.ttf}
@@ -18,30 +19,98 @@ style=phys,]{biblatex}
 \setlength{\parskip}{.5em}
 
 \title{轴子暗物质及腔场探测}
-\author{胡乃超\thanks{12309011，中山大学物理科学与工程技术学院2013级物理学}}%\13物理学\, 12309011}
+\author{胡乃超\\(2013级物理学\, 12309011)}
 \date{2014, 六月}
 
 \begin{document}
+
+\twocolumn[
+\begin{@twocolumnfalse}
 \maketitle
 \renewcommand{\abstractname}{摘要}
 \begin{abstract}
-\emph{关键词：}
+最近测定宇宙学参数表明我们的宇宙相当平坦，其总的能量密度大约由
+$\frac{2}{3}$的真空能和$\frac{1}{3}$的非相对论性物质组成。我们所熟悉的
+普通重子物质只是后者的一小部分。相对的，一种或多种暗物质因此被强烈认为
+构成了宇宙中的物质的主要成分。轴子(axion)作为强 CP 问题Peccei—Quinn解中
+出现的一种基本赝标量波色子，是暗物质的良好候选者。如果轴子存在，它必须
+非常轻，质量范围约为$10^{-6}-10^{-3}eV$，并拥有极其微弱的对物质和辐射
+的耦合。尽管如此，自 1983 年由 Sikivie 提出一种可行的基于Primakoff效应
+的轴子搜索策略，目前的类似实验已经可以把系统噪音降至$\sim 100mK$甚至更
+低。而日本的CARRACK 团队则重新设计了理论上能将有效噪音降至$\sim 12mK$
+的新方案。有理由相信几年之内实验上便可以确定的探测或排除轴子。而正面的
+探测结果同时也会提供轴子的精细结构，其中会包含大量的未知的有关银河系历
+史、结构和动力学的信息。本文将介绍轴子的一些有用的理论特性，并简单介绍
+探测轴子的两个重要实验的主要思路。\par
+\emph{关键词：}轴子，冷暗物质，宇宙学，Primakoff效应
 \end{abstract}
+\end{@twocolumnfalse}
+]
+
 \renewcommand{\contentsname}{目录}
 \tableofcontents
+
 \section{引言}
-\cite{Kim}
-\section{轴子理论}
+近年来，依据宇宙学的发展和测量技术的精进
+\cite{hanany00}\cite{perlmutter99}，我们已经知道居住的宇宙是高度
+平坦的($\Omega \sim 1$)。其中两个主要组成部分的分布约为真空能
+($\Omega_{\Lambda} \sim 0.65$)和非相对论性物质($\Omega_m \sim 0.35$)。
+而利用原初核合成(primordial nucleosynthesis)可分析出重子物质的相对密度
+$\Omega \sim 0.045$\cite{schramm98}。\par
+很多种观测包括星系团的动力学，单个星系的旋转曲线，轻元素的丰富程度，引
+力透镜效应，宇宙大规模结构(LSS)和微波背景辐射的各向异性等均表明所搜寻
+的暗物质必须是非重子的，非高热的和无碰撞的。具有所需性质的粒子被称为
+``冷暗物质''（CDM）。最主要的CDM候选者包括大质量弱相互作用粒子(WIMPs)
+和轴子两种。其中轴子是量子色动力学中著名的强CP问题的最吸引人的一个解，在
+1977年由Peccei和Quinn首先提出。不过由于轴子的相对能量密度$\Omega_a$与
+其质量$m_a$成反比，为了达到暗物质所占的相对能量密度，$m_a$的范围约在
+$10^{-6}-10^{-3}eV$。这虽使得轴子的一些热性质与宇宙学观测结果吻合很好\cite{sikivie12}，
+却也对探测的一期和方法提出极高要求。\par
+尽管如此，Sikivie仍然建立起了一种非常优雅的探测星系轴子暗物质的方法
+\cite{sikivie83a}\cite{sikivie85}。该方法利用Primakoff效应使轴子在调频
+高Q腔场中转化为微波光子，从而进行有效探测。为证明其方案可行性，基于当
+时的仪器便有实验进行。而这一方法至今更是主流轴子腔场探测方案的基础。另
+一方面，对其进行较大修改并已取得非常好实验结果的里登堡原子单光子量子探
+测实验也是很值得一提的。
+
+\section{轴子理论回顾}
 \subsection{强CP问题}
-\subsection{轴子参数}
+粒子物理中的标准模型(SM)在大型强子对撞机(LHC)发现了希格斯玻色子之后基
+本很完善了。不用说，SM是一个成功的理论，如果不考虑强CP问题的话。
+下面的规范对称性允许的量子色动力学拉氏量的四维散度项
+\begin{equation}
+  \mathcal{L} = \frac{\theta g_s^2}{32\pi^2}G_{\mu\nu}^a\tilde{G}^{a\mu\nu}
+  \label{m:4-div}
+\end{equation}
+会破坏CP对称并贡献中
+子电偶极矩(NEDM)。其中$g_s$是规范耦合常数，$G_{\mu\nu}^a$是胶子场强度，
+$\theta$是一个常参数。而NEDM的实验数值范围
+$\abs{d_n}<2.9 \times 10^{-26} e\, cm$ \cite{baker06}，这就要求
+$\theta<0.7\times10^{-11}$\cite{kim10}。\par
+那么问题就是$\theta$为什么这么小?因为从ABJ异常
+\cite{adler69}\cite{bell69}可以证明式\ref{m:4-div}对$\theta$的依赖性可
+以如下表示
+\begin{equation}
+  \bar{\theta} = \theta - arg \, det(m_1,m_2, \ldots, m_n),
+\end{equation}
+其中$m_i$为夸克质量。而夸克的质量起源自电弱理论，$\theta$则完全来自与
+QCD理论。事实上SM完全没有提供任何理由让两个完全不同的物理吻合到如此程
+度($10^{-11}$)。而这就是通常所说的强CP问题。
+\subsection{轴子参数及一些限制}
 \subsection{轴子与宇宙学}
 
 \section{Sikivie实验}
+\subsection{原理与技术}
+\subsection{两个原理实验}
+
 \section{CARRACK实验}
+\subsection{Redberg原子}
+\subsection{CARRACK I实验}
+
 \section{总结}
 
 \medskip
-\renewcommand\refname{参考文献}
+\renewcommand{\refname}{参考文献}
 \printbibliography
 
 \end{document}
