@@ -1,6 +1,14 @@
-\documentclass[a4paper]{article}
+\documentclass[twocolumn,12pt,a4paper]{article}
 
 \usepackage{xeCJK}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\graphicspath{ {images/} }
+\usepackage[backend=biber,
+style=phys,]{biblatex}
+ 
+\addbibresource{elex.bib}
 
 \setCJKmainfont{simsun.ttf}
 \setCJKsansfont{simhei.ttf}
@@ -9,24 +17,31 @@
 \setlength{\parindent}{2em}
 \setlength{\parskip}{.5em}
 
-\title{轴子暗物质的腔场探测}
-\author{胡乃超\\13物理学\, 12309011}
-\date{June, 2014}
+\title{轴子暗物质及腔场探测}
+\author{胡乃超\thanks{12309011，中山大学物理科学与工程技术学院2013级物理学}}%\13物理学\, 12309011}
+\date{2014, 六月}
 
 \begin{document}
 \maketitle
+\renewcommand{\abstractname}{摘要}
 \begin{abstract}
-\textbf{关键词：}
+\emph{关键词：}
 \end{abstract}
-\section*{引言}
+\renewcommand{\contentsname}{目录}
+\tableofcontents
+\section{引言}
+\cite{Kim}
+\section{轴子理论}
+\subsection{强CP问题}
+\subsection{轴子参数}
+\subsection{轴子与宇宙学}
 
-\section*{轴子理论}
-\subsection*{强CP问题}
-\subsection*{轴子参数}
-\subsection*{轴子与宇宙学}
+\section{Sikivie实验}
+\section{CARRACK实验}
+\section{总结}
 
-\section*{Sikivie实验}
-\section*{CARRACK实验}
-\section*{总结}
+\medskip
+\renewcommand\refname{参考文献}
+\printbibliography
 
 \end{document}
