@@ -1,6 +1,8 @@
 \documentclass[twocolumn,12pt,a4paper]{article}
 
 \usepackage{xeCJK}
+\usepackage{amsmath}
+\usepackage{balance}
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{subcaption}
@@ -18,7 +20,7 @@ style=phys,]{biblatex}
 \setlength{\parindent}{2em}
 \setlength{\parskip}{.5em}
 
-\title{轴子暗物质及腔场探测}
+\title{轴子暗物质与腔场探测}
 \author{胡乃超\\(2013级物理学\, 12309011)}
 \date{2014, 六月}
 
@@ -65,7 +67,7 @@ $\Omega \sim 0.045$\cite{schramm98}。\par
 1977年由Peccei和Quinn首先提出。不过由于轴子的相对能量密度$\Omega_a$与
 其质量$m_a$成反比，为了达到暗物质所占的相对能量密度，$m_a$的范围约在
 $10^{-6}-10^{-3}eV$。这虽使得轴子的一些热性质与宇宙学观测结果吻合很好\cite{sikivie12}，
-却也对探测的一期和方法提出极高要求。\par
+却也对探测的仪器和方法提出极高要求。\par
 尽管如此，Sikivie仍然建立起了一种非常优雅的探测星系轴子暗物质的方法
 \cite{sikivie83a}\cite{sikivie85}。该方法利用Primakoff效应使轴子在调频
 高Q腔场中转化为微波光子，从而进行有效探测。为证明其方案可行性，基于当
@@ -97,26 +99,56 @@ $\theta<0.7\times10^{-11}$\cite{kim10}。\par
 其中$m_i$为夸克质量。而夸克的质量起源自电弱理论，$\theta$则完全来自与
 QCD理论。事实上SM完全没有提供任何理由让两个完全不同的物理吻合到如此程
 度($10^{-11}$)。而这就是通常所说的强CP问题。\par
-40多年前提出的轴子假设\cite{peccei77}首先就是为了解决
+40多年前提出的轴子假设\cite{peccei77a}\cite{peccei77b}首先就是为了解决
 这个强CP问题，而除此之外，其他的解决方式还有两种。第一种是取至少一种的
 夸克质量为零。这会使得QCD对$\theta$的依赖性，这样CP便守恒。但是由于这
 样会和现有的不止一种已经被验证的理论冲突，所以一般并不认为是合理的解。
 而第二种是假定CP和(或)P对称性自发破缺。这种情况下\ref{m:depen}中
 $\bar{\theta}$可以合理的被设置到很小的值。这种解法仍有很多研究在进行中。\par
 而轴子解法则用了更为简单的方法，并在天体物理和宇宙学等方面有更多应用。
-方法假定一种会自发破缺的$U_{PQ}(1)$拟对称性。然后考虑式\ref{m:depen}可
+方法假定一种会自发破缺的$U_{PQ}(1)$拟对称性，即PQ对称性。然后考虑式\ref{m:depen}可
 以做如下修正
-\begin{equation}
-  \bar{\theta} = \theta - arg \, det(m_1,m_2, \ldots, m_n)- \frac{a(x)}{f_a},
+\begin{multline}
+  \bar{\theta} = \theta - arg \, det(m_1,m_2,\\ \ldots, m_n)- \frac{a(x)}{f_a},
   \label{m:modd}
-\end{equation}
+\end{multline}
 其中$a(x)$是轴子场，$f_a$叫做轴子衰变常数，代表对称破缺程度。此时非微
-扰效应会产生一个对应的有效势能函数$V(\bar{\theta})$，其最小值恰好在
+扰效应会产生一个对应的有效势能函数$V(\bar{\theta})$，其最小值在
 $\bar{\theta}=0$处\cite{vefa84}。由此强CP问题得以解决。而解法提
 出很快便意识到与PQ对称破缺相联系的是一种新的拟南部戈德斯通波色子
 (quasi-Nambu-Goldstone boson)，即轴子\cite{weinberg78}\cite{wilczek78}。
 \subsection{轴子参数及一些限制}
-\subsection{轴子与宇宙学}
+\subsubsection{轴子参数}
+轴子的特性参数用当前已有的代数技巧便可推出，此类文献也十分丰富，如
+\cite{weinberg78}。不过由于轴子的模型不止一种，每种模型假设不同，推导
+出的参数也可以有比较大的差异。最著名的两种是DFSZ模型
+\cite{zhitnitsky80}\cite{dine81}和KSVZ模型\cite{kim79}\cite{shifman80}，
+但其中
+多数参数选择也都不相同。不过本文重点只集中在轴子及其腔场探测实验的介绍
+上，故不对质量之外的其他参数做过多解释。不过所有轴子的耦合均反比于
+$f_a$。\par
+而轴子质量$m_a$是实验探测的主要参数,则有比较统一认同的形式。一般认为轴
+子从手性对称破缺中获得质量，其大小为
+\begin{equation}
+  \begin{split}
+    m_a &= \frac{\sqrt{z}}{1+z}\frac{m_{\pi}f_{\pi}}{f_a} \\
+        &\simeq 0.6 eV \frac{10^7GeV}{f_a},
+  \end{split}
+  \label{m:mass}
+\end{equation}
+其中$m_{\pi}$是$\pi$介子的质量，$f_{\pi}$是$\pi$介子的衰变常数，而
+$z=m_u/m_d$则是上下夸克质量比，此处我们取标准值$0.56$。
+\subsubsection{天体物理方面的限制}
+重新考察与轴子质量关系密切的衰变常数$f_a$，其可以表示为
+\begin{equation}
+  f_a = \frac{v_a}{N},
+  \label{m:fa}
+\end{equation}
+其中$v_a$称为真空期望值 (vacuum expectation value)，会自发发破PQ对称性，
+而$N$是表示PQ对称颜色异常 (color anomaly)的整数。由于$v_a$的自由性很高，
+导致$m_a$的范围很大。实际上，模型提出最初计算的$m_a$比今天的最重假设还
+要重$10^8$。本部分和下面一部分我们就介绍下对质量的主要限制条件。\par
+\subsubsection{宇宙学方面的限制}
 
 \section{Sikivie实验}
 \subsection{原理与技术}
@@ -129,6 +161,7 @@ $\bar{\theta}=0$处\cite{vefa84}。由此强CP问题得以解决。而解法提
 \section{总结}
 
 \medskip
+\balance
 \renewcommand{\refname}{参考文献}
 \printbibliography
 
