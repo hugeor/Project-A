@@ -9,7 +9,7 @@
 \graphicspath{ {images/} }
 \usepackage[backend=biber,
 style=phys,]{biblatex}
-\usepackage[top=1in,bottom=1in,left=1.25in,right=1.25in]{geometry}
+\usepackage[top=1.25in,bottom=1.25in,left=1in,right=1in]{geometry}
 
 \addbibresource{elex.bib}
 
@@ -138,7 +138,7 @@ $f_a$。\par
 \end{equation}
 其中$m_{\pi}$是$\pi$介子的质量，$f_{\pi}$是$\pi$介子的衰变常数，而
 $z=m_u/m_d$则是上下夸克质量比，此处我们取标准值$0.56$。
-\subsubsection{天体物理方面的限制}
+\subsubsection{一些实验方面的限制}
 重新考察与轴子质量关系密切的衰变常数$f_a$，其可以表示为
 \begin{equation}
   f_a = \frac{v_a}{N},
@@ -148,10 +148,88 @@ $z=m_u/m_d$则是上下夸克质量比，此处我们取标准值$0.56$。
 而$N$是表示PQ对称颜色异常 (color anomaly)的整数。由于$v_a$的自由性很高，
 导致$m_a$的范围很大。实际上，模型提出最初计算的$m_a$比今天的最重假设还
 要重$10^8$。本部分和下面一部分我们就介绍下对质量的主要限制条件。\par
+首先，对于质量$m_a \geq 1MeV$，并迅速($10^{-11}$秒或更少)衰变成
+$e^+e^-$的轴子模型的存在可能，已经由类似$\pi^+ \rightarrow a(e^+ e^-)+e^++\nu_e$
+的衰变反应探测实验排除了\cite{eichler86}。第二，相对前面的模型，如果轴
+子存活时间较长($10^{-11}$秒或更多)，束晶堆方面的实验则对轴子质量有很强的限
+制。由于实验中涉及较多过程，每种依赖不同的耦合。虽然难以精确计算总体效
+果，却可以确定不会全部耦合恰好完全抵消。而已经进行了的很多这方面的探测\cite{pdg98}
+已经把$m_a$的上限压缩至$\sim 50 keV$。下面考察一下天文观测对轴子质量提
+出的限制。恒星燃烧的速率是由其释放能量效率限制的。而放射轴子这类极轻的
+弱耦合波色子则是相当高效的能量释放方式。易见轴子的存在会加速恒星演化，
+由此红巨星分支的丰富程度对轴子质量限制较强，如对KSVZ模型即可排除在$200keV
+\geq m_a \geq 0.5eV$的范围\cite{raffelt87}。简单的说，对于红巨星
+内部的热过程来说，重于$200keV$难以大量放射，而过轻的轴子则耦合很弱。
+最后，$2eV \geq m_a \geq 3\times 10^{-3}eV$是由超新星SN1987A排除
+的。这是由于观测到的中微子与理论上只有中微子有效冷却星核的推算基本一致。
 \subsubsection{宇宙学方面的限制}
+到这里为止，我们差不多进行的是对不断的对质量范围排除的介绍，而宇宙学的研究则提
+供了一个指定的质量范围。首先，轴子会在PQ对称性自发破缺的时候发生一次相
+变，一般称为PQ相变，这时其获得质量。相应的，轴子场也会开始振荡，之后转
+化为不同形式的能量计入能量密度。那么由于对暴胀了解的缺乏，只能把以下的
+讨论分为两种：$(1)$暴胀的再加热温度低于PQ相变温度，即暴胀发生在PQ相变
+之后。此时轴子场相当于被暴胀同化，振荡会被以真空重整(vacuum
+realignment)的形式计入能量密度。若用临界密度$\rho_c$表示即
+\begin{equation}
+  \label{m:case1}
+  \begin{split}
+    \Omega_a &= \frac{\rho_a(t_0)}{\rho_c} \\
+    &=
+    \frac{1}{6}\alpha^2(t_1)(\frac{f_a}{10^{12}GeV})^{7/6}(\frac{0.7}{h_{100}})^2,
+  \end{split}
+\end{equation}
+其中$\alpha(t_1) = a(t_1)/f_a$称为初始偏差角，$t_1$为PQ相变的时间
+\cite{asztalos01}。可以看出$\alpha(t_1)$有很大随机性，很难根据式
+\ref{m:case1}推算$m_a$。不过幸运的是，形成今天的宇宙需要暗物质非完全均
+匀，这使得下种情况更合理些。$(2)$暴胀的再加热温度高于PQ相变温度，即暴胀发
+生在PQ相变之后。此时情况比上一种要复杂很多，很多文献详细描述了这种状况
+下的物理。此处只取学界比较普遍承认的轴子转化能量密度，
+\begin{equation}
+  \label{m:case2}
+  \begin{split}
+    \Omega_a &= \Omega^{vac}+\Omega^{d.w.}+\Omega^{str}\\
+&= (0.5-3.0)(\frac{f_a}{10^{12}})^{7/6}(\frac{0.7}{h_{100}})^2.
+  \end{split}
+\end{equation}
+结合今天的$\Omega_a$数据和式\ref{m:mass}可以得到质量区间$1.3\mu eV <
+m_a < 13\mu eV$\cite{asztalos01}。不过考虑到即使到今日宇宙学仍然不是完
+全精确的科学，很多参数的不确定度依然很高，故可以认为合理区间约在
+$1-100\mu eV$。\par
+\begin{figure}
+  \centering
+  \includegraphics[width=0.46\textwidth]{range}
+  \caption{$m_a$ ($f_a$)的范围}
+  \label{fig:constr}
+\end{figure}
+图\ref{fig:constr}总结了到这里我们对$m_a$所讨论的全部内容。另外从实验
+的角度出发，如前所讲，$\Omega_a$会随$m_a$的降低而增大，可行的实验方案
+应从较低质量探测开始向质量较大方向推进。
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.46\textwidth]{prima}
+  \caption{轴子的Primakoff效应对应费曼图，其中$e$是电子，$I$表示离子。}
+  \label{f:prima}
+\end{figure}
 
 \section{Sikivie实验}
-\subsection{原理与技术}
+\subsection{原理}
+轴子可以通过刺激其在强磁场下转化为光子来探测
+\cite{sikivie83a}\cite{sikivie85}。这是一种Primakoff效应，其费曼图如图
+\ref{f:prima}。特别的，如果腔场的频率$\omega = 2\pi f$，轴子就会转化成
+光子。\par
+可以推倒出\cite{sikivie85}轴子转化为光子的功率是
+\begin{equation}
+  \label{m:pocov}
+  \begin{split}
+    P_a &= (\frac{\alpha}{\pi} \frac{g_\gamma}{f_a})^2 V B_0^2 \rho_a C \frac{1}{m_a} Min(Q_L,Q_a)\\
+    &= 0.5\times10^{-26}W(\frac{V}{500 liter})(\frac{B_0}{7 T})^2 \\
+    &\times  C (\frac{g_\gamma}{0.36})^2(\frac{\rho_a}{\frac{1}{2}\times10^{-24}g/cm^3})\\
+    &\times (\frac{m_a}{2\pi(GHz)})Min(Q_L,Q_a),
+\end{split}
+\end{equation}
+其中$V$是腔场容积， $Q_L$是腔洞的有载品质因子， $Q_a = 10^{16}$是银
+晕轴子信号的$Q$因子，$\rho_a$是地面上的银晕轴子密度，$C$则是形状因子。
+对于采用$TM_{010}$模式的圆柱形腔洞最大的$C$值约为$C \approx 0.69$。
 \subsection{两个原理实验}
 
 \section{CARRACK实验}
