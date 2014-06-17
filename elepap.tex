@@ -139,6 +139,7 @@ $f_a$。\par
 其中$m_{\pi}$是$\pi$介子的质量，$f_{\pi}$是$\pi$介子的衰变常数，而
 $z=m_u/m_d$则是上下夸克质量比，此处我们取标准值$0.56$。
 \subsubsection{一些实验方面的限制}
+\label{econstrs}
 重新考察与轴子质量关系密切的衰变常数$f_a$，其可以表示为
 \begin{equation}
   f_a = \frac{v_a}{N},
@@ -163,6 +164,7 @@ $e^+e^-$的轴子模型的存在可能，已经由类似$\pi^+ \rightarrow a(e^+
 最后，$2eV \geq m_a \geq 3\times 10^{-3}eV$是由超新星SN1987A排除
 的。这是由于观测到的中微子与理论上只有中微子有效冷却星核的推算基本一致。
 \subsubsection{宇宙学方面的限制}
+\label{cconstrs}
 到这里为止，我们差不多进行的是对不断的对质量范围排除的介绍，而宇宙学的研究则提
 供了一个指定的质量范围。首先，轴子会在PQ对称性自发破缺的时候发生一次相
 变，一般称为PQ相变，这时其获得质量。相应的，轴子场也会开始振荡，之后转
@@ -201,7 +203,7 @@ $1-100\mu eV$。\par
   \caption{$m_a$ ($f_a$)的范围}
   \label{fig:constr}
 \end{figure}
-图\ref{fig:constr}总结了到这里我们对$m_a$所讨论的全部内容。另外从实验
+图\ref{fig:constr}\cite{asztalos01}总结了到这里我们对$m_a$所讨论的全部内容。另外从实验
 的角度出发，如前所讲，$\Omega_a$会随$m_a$的降低而增大，可行的实验方案
 应从较低质量探测开始向质量较大方向推进。
 \begin{figure}[h!]
@@ -216,7 +218,8 @@ $1-100\mu eV$。\par
 轴子可以通过刺激其在强磁场下转化为光子来探测
 \cite{sikivie83a}\cite{sikivie85}。这是一种Primakoff效应，其费曼图如图
 \ref{f:prima}。特别的，如果腔场的频率$\omega = 2\pi f$，轴子就会转化成
-光子。\par
+光子。确定性的探测到这种光子则表示轴子是存在的，不过由于其他来源光子的
+干扰，实验上仍然非常有挑战性。\par
 可以推倒出\cite{sikivie85}轴子转化为光子的功率是
 \begin{equation}
   \label{m:pocov}
@@ -229,15 +232,86 @@ $1-100\mu eV$。\par
 \end{equation}
 其中$V$是腔场容积， $Q_L$是腔洞的有载品质因子， $Q_a = 10^{16}$是银
 晕轴子信号的$Q$因子，$\rho_a$是地面上的银晕轴子密度，$C$则是形状因子。
-对于采用$TM_{010}$模式的圆柱形腔洞最大的$C$值约为$C \approx 0.69$。
-\subsection{两个原理实验}
+对于采用$TM_{010}$模式的圆柱形腔洞最大的$C$值约为$C \approx 0.69$。\par
+如\ref{econstrs}、\ref{cconstrs}小节所示，轴子质量估计最好只能做到数量
+级的预估，因此设计实验的腔洞必须要可调频。当腔场扫过一个可能的轴子质量
+范围时，信噪比(SNR)是由在腔洞内噪中探测到轴子信号所需时间定义的，数学
+表示如下
+\begin{equation}
+  \label{m:snr}
+  SNR = \frac{P_a}{\bar{P_N}}\sqrt{Bt} = \frac{P_a}{k_BT_S}\sqrt{\frac{t}{B}},
+\end{equation}
+其中$\bar{P_N}= k_BBT_S$是腔洞噪音功率，$B$是带宽，而$T_S$是总噪音等效
+温度。在给定SNR时，可以推导扫描率的理论公式，而实验一般用如下简化形式
+\begin{equation}
+  \label{m:f}
+  \frac{1}{f}\frac{df}{dt} \propto (B_0^2V)^2\frac{1}{T_S^2}.
+\end{equation}
+来考虑优化方案\cite{asztalos01}。目前的类似实验一般考虑经费和技术原因，努力发展低噪放大
+器来提升实验效果。
+\subsection{两个验证性实验}
+现在被成为是轴子探测``第一代实验''的是两个验证前一节方案可行性的成功例
+子。但是对于真正轴子模型的要求精度来说大概还要差两个至三个数量级。主要
+的问题出在仪器不够大以及降噪工作并不很好。\par
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.46\textwidth]{rbfsc}
+  \caption{RBF实验装置草图}
+  \label{f:rbf}
+\end{figure}
+两个实验的装置大概如图\ref{f:rbf}所示。下面简要的叙述两个实验的硬件和
+取得的结果。$(1)$RBF实验(The Rochester-Brookhaven-Fermilab
+experiment):中间最强磁场强度$\sim 8.5T$，空载时$Q_W \sim 1.8 \times 10^5
+\,(2-3GHz,\,4.2K)$，扫频可以连续性调节。以很高的可信度($95\%$ C.L.)排
+除了$4.5\mueV$到$16\mu eV$的质量范围\cite{depanfilis87}。$(2)$UF实验(The University of
+Florida experiment):中间最强磁场强度$\sim 8.6T$，空载时$Q_W \sim 1.6
+\times 10^5 \,(1.5GHz,\,4.2K)$，扫频时并不连续。同样以很高的可信度
+($97.5\%$ C.L.)排除了约$5.46-5.95\mu eV$到$7.46-7.60\mu eV$的质量范围\cite{hagmann90}。
+图形化的结果见图\ref{f:eexcl}。
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.46\textwidth]{eexcl}
+  \caption{两个实验排除的范围\cite{asztalos01}}
+  \label{f:eexcl}
+\end{figure}
 
 \section{CARRACK实验}
-\subsection{Redberg原子}
-\subsection{CARRACK I实验}
+日本的CARRACK团队已经发表很多关于使用里登堡原子替代低噪放大器的实验设
+计论文，甚至实现了一个验证性实验，并仍在试图不断优化现有设计。图
+\ref{redsc}是该实验的设计概念图。在其中普通原子被激发到里登堡原子态，
+并通过与轴子转化腔耦合的探测腔。可以通过Stark效应调节里登堡原子的能级
+差，使之恰好与转化的光子能量相同。这样的原子再通过选择性电离场时会被选
+择出来。而由于用原子作为探测器，整个实验并不像其他方案一样受到量子噪音
+的限制。\par
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.46\textwidth]{redsc}
+  \caption{CARRACK实验设计图}
+  \label{redsc}
+\end{figure}
+尽管方案\cite{tada06}的设计并不很久，实验装置却已经出现了两个版
+本，CARRACK 1和CARRACK 2。而实验的结果更是非常显著的，在$2527MHz$的频
+率下已经探测到温度低至$12mK$(虽然符合理论部分的温度到$67mK$)。此外，由
+于两个实验仍属于验证方案可行性的范围，设计者也同前面的一样选择探测尽可
+能小的质量。CARRACK 1探测的质量范围在$\sim 10\mu eV$，而CARRACK 2的质
+量下限则到达了$2 \mu eV$。如果继续向下推进质量的话，则需要里登堡原子的
+主量子数$n\geq 180$，而目前实验上可以操控的范围一般认为在
+$10<n<150$。而且在那么大的主量子数的时候，也很难用选择性场电离来分出激
+发的原子\cite{asztalos01}\cite{tada06}。
 
 \section{总结}
-
+作为冷暗物质的候选者之一，轴子很好的一点是几乎所有相关参数都限制在有限
+的参数空间内。尽管期望的转换功率非常低，由我们的讨论可以相信确定性的探
+测实验很快就会出现。这里确定性是指或者通过高可信度的找到轴子，或者排除
+它的存在。对于传统的Sikivie类的实验方案来说，甚至``第三代实验''的仪器
+也已经生产出来了。新设计的SQUID提供了许多新的可能，许多新的大型实验也
+在进行中。而对于日本里登堡原子的方案来说，更高频率的实验方案并不会提出
+新的概念挑战，尽管可能会使其相当复杂。\par
+最后，如果站在一个乐观的立场来讲的话，轴子一旦被发现，将标志着天体物理
+和宇宙学进入一个新的时代。因为目前的实验会同时探测出轴子的总能量，这很
+可能会揭示轴子的精细结构和宇宙初期的信息。一系列的新信息会包含丰富的银
+河系形成和演化的未知知识，轴子本身在粒子物理中的角色也许也会加速新物理
+的出现。
 \medskip
 \balance
 \renewcommand{\refname}{参考文献}
