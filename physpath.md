@@ -6,10 +6,10 @@ course, to a proper pace to be ajusted later.
 
 ##Current Stage Emphasis
 1. Languages
-... German; ablilty of basic scientific listening and reading; time
+   German; ablilty of basic scientific listening and reading; time
 stamp:from 2014-26 to within this year (2014).
 2. Primary Mathematics
-... mathematical methods; time stamp: from 2014-27 to 2014-33.
+   mathematical methods; time stamp: from 2014-27 to 2014-33.
 
 ##Languages
 No specitfic time given here.
@@ -23,10 +23,9 @@ No specitfic time given here.
 ##Primary Mathematics
 Primary math: ~~math I, linear algebra~~, mathematical methods and very
 elementary functional analysis.
-
 Time scale: from 2014-27 to 2014-36.
 * Set theory: open sets, compact spaces.
-... Topology.You may be surprised to learn that they do play a role indeed in physics!
+   Topology.You may be surprised to learn that they do play a role indeed in physics!
 * ~~Algebraic equations. Approximation techniques. Series expansions: the Taylor series.~~
 * ~~Solving equations with complex numbers. Trigonometry.~~
 * ~~Infinitesimals. Differentiation. Integration. Differential equations. Linear equations.~~
@@ -47,7 +46,6 @@ Resources:
 
 ##Classical Mechanics
 Elementary mechanics: ~~Newtonian~~, Lagrangean, Hamiltonian.
-
 Time scale: from 2014-27 to 2014-38.
 * ~~Static mechanics (forces, tension)~~; hydrostatics; ~~Newton’s Laws~~.
 * ~~The elliptical orbits of planets. The many-body system.~~
@@ -58,7 +56,7 @@ Time scale: from 2014-27 to 2014-38.
   equations. Viscosity and friction.
 
 Resources:
-1. [A short course on Classical Mechanics by Prof. J. J. Binney](http://www-thphys.physics.ox.ac.uk/user/JamesBinney/cmech.pdf)
+1. [A short course on Classical Mechanics by Prof. J. J. Binney](http://www-thphys.physics.ox.ac.uk/user/JamesBinney/cmech.pdf)__
 2. [An intermediate level course on Analytical Classical Dynamics by R. Fitzpatrick, Univ. of Texas, Austin](http://farside.ph.utexas.edu/teaching/336k/lectures/)
 3. ~~[新概念物理教程.力学](http://book.douban.com/subject/1614977/)~~
 4. ~~[力学15讲](http://book.douban.com/subject/6313269/)~~
