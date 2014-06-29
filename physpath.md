@@ -6,23 +6,26 @@ course, to a proper pace to be ajusted later.
 
 ##Current Stage Emphasis
 1. Languages
+
    German; ablilty of basic scientific listening and reading; time
 stamp:from 2014-26 to within this year (2014).
 2. Primary Mathematics
+
    mathematical methods; time stamp: from 2014-27 to 2014-33.
 
 ##Languages
 No specitfic time given here.
-1. ~~English is a prerequisite, which can be count as mastered at this
++ ~~English is a prerequisite, which can be count as mastered at this
    stage. If further needed, writting should be the part to be
    sharpened. Greek letters are used a lot. Master their names.~~
-2. French, German are not all that necessary but considered good
++ French, German are not all that necessary but considered good
    practice.
-3. Japanese, Russian are the last part to conquer.
++ Japanese, Russian are the last part to conquer.
 
 ##Primary Mathematics
 Primary math: ~~math I, linear algebra~~, mathematical methods and very
 elementary functional analysis.
+
 Time scale: from 2014-27 to 2014-36.
 * Set theory: open sets, compact spaces.
    Topology.You may be surprised to learn that they do play a role indeed in physics!
@@ -46,6 +49,7 @@ Resources:
 
 ##Classical Mechanics
 Elementary mechanics: ~~Newtonian~~, Lagrangean, Hamiltonian.
+
 Time scale: from 2014-27 to 2014-38.
 * ~~Static mechanics (forces, tension)~~; hydrostatics; ~~Newton’s Laws~~.
 * ~~The elliptical orbits of planets. The many-body system.~~
