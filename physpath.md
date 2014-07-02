@@ -5,40 +5,37 @@ which I modified slightly according to a timeline of myself and, of
 course, to a proper pace to be ajusted later.
 
 ##Current Stage Emphasis
-1. Languages
-
+1. Languages  
    German; ablilty of basic scientific listening and reading; time
-stamp:from 2014-26 to within this year (2014).
-2. Primary Mathematics
-
+stamp:from 2014-26 to within this year (2014).  
+2. Primary Mathematics  
    mathematical methods; time stamp: from 2014-27 to 2014-33.
 
 ##Languages
-No specitfic time given here.
+No specitfic time given here.  
 + ~~English is a prerequisite, which can be count as mastered at this
    stage. If further needed, writting should be the part to be
-   sharpened. Greek letters are used a lot. Master their names.~~
+   sharpened. Greek letters are used a lot. Master their names.~~  
 + French, German are not all that necessary but considered good
-   practice.
-+ Japanese, Russian are the last part to conquer.
+   practice.  
++ Japanese, Russian are the last part to conquer.  
 
 ##Primary Mathematics
 Primary math: ~~math I, linear algebra~~, mathematical methods and very
-elementary functional analysis.
+elementary functional analysis.  
+Time scale: from 2014-27 to 2014-36.  
+* Set theory: open sets, compact spaces.  
+   Topology.You may be surprised to learn that they do play a role indeed in physics!  
+* ~~Algebraic equations. Approximation techniques. Series expansions: the Taylor series.~~  
+* ~~Solving equations with complex numbers. Trigonometry.~~  
+* ~~Infinitesimals. Differentiation. Integration. Differential equations. Linear equations.~~  
+* The Fourier transformation. The use of complex numbers. Convergence of series.  
+* The complex plane. Cauchy theorems and contour integration (now this is fun).  
+* The Gamma function (enjoy studying its properties). Generalized functions.  
+* Gaussian integrals. Probability theory.  
+* Partial differential equations. Dirichlet and Neumann boundary conditions.  
 
-Time scale: from 2014-27 to 2014-36.
-* Set theory: open sets, compact spaces.
-   Topology.You may be surprised to learn that they do play a role indeed in physics!
-* ~~Algebraic equations. Approximation techniques. Series expansions: the Taylor series.~~
-* ~~Solving equations with complex numbers. Trigonometry.~~
-* ~~Infinitesimals. Differentiation. Integration. Differential equations. Linear equations.~~
-* The Fourier transformation. The use of complex numbers. Convergence of series.
-* The complex plane. Cauchy theorems and contour integration (now this is fun).
-* The Gamma function (enjoy studying its properties). Generalized functions.
-* Gaussian integrals. Probability theory.
-* Partial differential equations. Dirichlet and Neumann boundary conditions.
-
-Resources:
+Resources:  
 1. [Prof. James Binney's course on Complex Numbers (*.pdf)](http://www-thphys.physics.ox.ac.uk/users/JamesBinney/complex.pdf)  
 2. Chris Pope's lecture notes:
    [Methods 1](http://faculty.physics.tamu.edu/pope/mch1.ps)
@@ -48,16 +45,15 @@ Resources:
 5. [Mathematics of Classical and Quantum Physics](http://book.douban.com/subject/2880541/)  
 
 ##Classical Mechanics
-Elementary mechanics: ~~Newtonian~~, Lagrangean, Hamiltonian.
-
-Time scale: from 2014-27 to 2014-38.
-* ~~Static mechanics (forces, tension)~~; hydrostatics; ~~Newton’s Laws~~.
-* ~~The elliptical orbits of planets. The many-body system.~~
-* The action principle. Hamilton’s equations. The Lagrangean.
-* The harmonic oscillator. The pendulum.
-* Poisson’s brackets.
+Elementary mechanics: ~~Newtonian~~, Lagrangean, Hamiltonian.  
+Time scale: from 2014-27 to 2014-38.  
+* ~~Static mechanics (forces, tension)~~; hydrostatics; ~~Newton’s Laws~~.  
+* ~~The elliptical orbits of planets. The many-body system.~~  
+* The action principle. Hamilton’s equations. The Lagrangean.  
+* The harmonic oscillator. The pendulum.  
+* Poisson’s brackets.  
 * Wave equations. Liquids and gases. The Navier-Stokes
-  equations. Viscosity and friction.
+  equations. Viscosity and friction.  
 
 Resources:  
 1. [A short course on Classical Mechanics by Prof. J. J. Binney](http://www-thphys.physics.ox.ac.uk/user/JamesBinney/cmech.pdf)  
