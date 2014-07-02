@@ -39,13 +39,13 @@ Time scale: from 2014-27 to 2014-36.
 * Partial differential equations. Dirichlet and Neumann boundary conditions.
 
 Resources:
-1. [Prof. James Binney's course on Complex Numbers (*.pdf)](http://www-thphys.physics.ox.ac.uk/users/JamesBinney/complex.pdf)
+1. [Prof. James Binney's course on Complex Numbers (*.pdf)](http://www-thphys.physics.ox.ac.uk/users/JamesBinney/complex.pdf)  
 2. Chris Pope's lecture notes:
    [Methods 1](http://faculty.physics.tamu.edu/pope/mch1.ps)
-   [Methods 2](http://faculty.physics.tamu.edu/pope/mch2.ps)
-3. [The complex plane, Cauchy theorems and contour integration](http://people.math.gatech.edu/~cain/winter99/complex.html)
-4. [MaPh_2013](http://elearning.sysu.edu.cn/webapps/portal/frameset.jsp?tab_tab_group_id=_84_1&url=%2Fwebapps%2Fblackboard%2Fexecute%2FcourseMain%3Fcourse_id%3D_1260_1)
-5. [Mathematics of Classical and Quantum Physics](http://book.douban.com/subject/2880541/)
+   [Methods 2](http://faculty.physics.tamu.edu/pope/mch2.ps)  
+3. [The complex plane, Cauchy theorems and contour integration](http://people.math.gatech.edu/~cain/winter99/complex.html)  
+4. [MaPh_2013](http://elearning.sysu.edu.cn/webapps/portal/frameset.jsp?tab_tab_group_id=_84_1&url=%2Fwebapps%2Fblackboard%2Fexecute%2FcourseMain%3Fcourse_id%3D_1260_1)  
+5. [Mathematics of Classical and Quantum Physics](http://book.douban.com/subject/2880541/)  
 
 ##Classical Mechanics
 Elementary mechanics: ~~Newtonian~~, Lagrangean, Hamiltonian.
@@ -59,10 +59,10 @@ Time scale: from 2014-27 to 2014-38.
 * Wave equations. Liquids and gases. The Navier-Stokes
   equations. Viscosity and friction.
 
-Resources:
-1. [A short course on Classical Mechanics by Prof. J. J. Binney](http://www-thphys.physics.ox.ac.uk/user/JamesBinney/cmech.pdf)__
-2. [An intermediate level course on Analytical Classical Dynamics by R. Fitzpatrick, Univ. of Texas, Austin](http://farside.ph.utexas.edu/teaching/336k/lectures/)
-3. ~~[新概念物理教程.力学](http://book.douban.com/subject/1614977/)~~
-4. ~~[力学15讲](http://book.douban.com/subject/6313269/)~~
-5. ~~[力学](http://book.douban.com/subject/3349046/)~~
+Resources:  
+1. [A short course on Classical Mechanics by Prof. J. J. Binney](http://www-thphys.physics.ox.ac.uk/user/JamesBinney/cmech.pdf)  
+2. [An intermediate level course on Analytical Classical Dynamics by R. Fitzpatrick, Univ. of Texas, Austin](http://farside.ph.utexas.edu/teaching/336k/lectures/)  
+3. ~~[新概念物理教程.力学](http://book.douban.com/subject/1614977/)~~  
+4. ~~[力学15讲](http://book.douban.com/subject/6313269/)~~  
+5. ~~[力学](http://book.douban.com/subject/3349046/)~~  
 6. [Classical Mechanics](http://book.douban.com/subject/6939524/)
