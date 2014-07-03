@@ -81,10 +81,10 @@ Time scale: electronics from 2014-27 to 2014-32, and optics 2014-33 to
 
 Resources:  
 1. [新概念物理教程 电磁学](http://book.douban.com/subject/1988423/)  
-1. [A.A. Louro’s lecture Notes on Optics](https://docs.google.com/viewer?url=http%3A%2F%2Fphas.ucalgary.ca%2Fphys323%2Ffall%2Fdocs%2Foptics.pdf)  
-1. [R. V. Jones lecture notes on Classical and Quantum Optics](http://people.seas.harvard.edu/~jones/ap216/lectures/lectures.html)  
-1. [Introduction to Electrodynamics (3rd Edition)](http://book.douban.com/subject/1965758/)  
-1. [波动学](http://book.douban.com/subject/19958335/)  
+2. [A.A. Louro’s lecture Notes on Optics](https://docs.google.com/viewer?url=http%3A%2F%2Fphas.ucalgary.ca%2Fphys323%2Ffall%2Fdocs%2Foptics.pdf)  
+3. [R. V. Jones lecture notes on Classical and Quantum Optics](http://people.seas.harvard.edu/~jones/ap216/lectures/lectures.html)  
+4. [Introduction to Electrodynamics (3rd Edition)](http://book.douban.com/subject/1965758/)  
+5. [波动学](http://book.douban.com/subject/19958335/)  
 
 ##Statistical Mechanics & Thermodynamics
 Yet another SM: should involve some quantum physics.  
@@ -98,26 +98,26 @@ Time scale: from 2014-33 to 2014-44.
 
 Resources:  
 1. [The course “Statistical Mechanics” by Alfred Huan](http://www.spms.ntu.edu.sg/PAP/courseware/statmech.pdf)  
-1. [Prof. Kelly’s lecture notes on Statistical Physics](http://www.physics.umd.edu/courses/Phys603/kelly/)  
-1. [Gould/Tobochnik lecture notes](http://stp.clarku.edu/notes/)  
-1. [Intermediate level course on Statistical Mechanics by R. Fitzpatrick](http://farside.ph.utexas.edu/teaching/sm1/statmech.pdf)  
+2. [Prof. Kelly’s lecture notes on Statistical Physics](http://www.physics.umd.edu/courses/Phys603/kelly/)  
+3. [Gould/Tobochnik lecture notes](http://stp.clarku.edu/notes/)  
+4. [Intermediate level course on Statistical Mechanics by R. Fitzpatrick](http://farside.ph.utexas.edu/teaching/sm1/statmech.pdf)  
 
 ##Electromagnetism
 Intermediate level electrodynamics: Maxwell’s Theory.  
 Time scale: from 2014-39 to 2014-50.  
 - Homogeneous and inhomogeneous
 - Maxwell’s laws in a medium. Boundaries. Solving the equations in:  
-        - Vacumm and homogeneous medium (electromagnetic waves)  
-        - In a box (wave guides)  
-        - At boundaries (fraction and reflection)  
+  1. Vacumm and homogeneous medium (electromagnetic waves)  
+  2. In a box (wave guides)  
+  3. At boundaries (fraction and reflection)  
 - The vector potential and gauge invariance (extremely important)
 - Emission and absorption on EM waves (antenna)
 - Light scattering against objects
 
 Resources:  
 1. [Notes on Classical Electromagnetism by R. Fritzpatrick](http://farside.ph.utexas.edu/teaching/jk1/Electromagnetism.pdf)  
-1. [Bo Thide’s EM Field theory text(advanced)](http://www.plasma.uu.se/CED/Book/EMFT_Book.pdf)  
-1. [Classical Electrodynamics](http://book.douban.com/subject/1667522/)  
+2. [Bo Thide’s EM Field theory text(advanced)](http://www.plasma.uu.se/CED/Book/EMFT_Book.pdf)  
+3. [Classical Electrodynamics](http://book.douban.com/subject/1667522/)  
 
 ****************
 2014
@@ -136,12 +136,12 @@ weeks|PMath|CMech| Elec| SM&T| Opt | EM  | QM  | PP
 36|1|1| |1|1| | |
 37| |1| |1|1| | |1
 38| |1| |1|1| | |1
-39| | | |1| |1|1|
-40| | | |1| |1|1|
-41| | | |1| |1|1|
-42| | | |1| |1|1|
-43| | | |1| |1|1|
-44| | | |1| |1|1|
+39| | | |1| |1|1|1
+40| | | |1| |1|1|1
+41| | | |1| |1|1|1
+42| | | |1| |1|1|1
+43| | | |1| |1|1|1
+44| | | |1| |1|1|1
 45| | | | | |1|1|
 46| | | | | |1|1|
 47| | | | | |1|1|
