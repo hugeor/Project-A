@@ -38,8 +38,8 @@ Time scale: from 2014-27 to 2014-36.
 Resources:  
 1. [Prof. James Binney's course on Complex Numbers (*.pdf)](http://www-thphys.physics.ox.ac.uk/users/JamesBinney/complex.pdf)  
 2. Chris Pope's lecture notes:
-   [Methods 1](http://faculty.physics.tamu.edu/pope/mch1.ps)
-   [Methods 2](http://faculty.physics.tamu.edu/pope/mch2.ps)  
+   [Methods 1](http://people.physics.tamu.edu/pope/methods_pages2011.pdf)
+   [Methods 2](http://people.physics.tamu.edu/pope/methods2.ps)  
 3. [The complex plane, Cauchy theorems and contour integration](http://people.math.gatech.edu/~cain/winter99/complex.html)  
 4. [MaPh_2013](http://elearning.sysu.edu.cn/webapps/portal/frameset.jsp?tab_tab_group_id=_84_1&url=%2Fwebapps%2Fblackboard%2Fexecute%2FcourseMain%3Fcourse_id%3D_1260_1)  
 5. [Mathematics of Classical and Quantum Physics](http://book.douban.com/subject/2880541/)  
