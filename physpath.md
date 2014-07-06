@@ -66,7 +66,7 @@ Resources:
 ##Optics & Electronics
 Classical and Quantum Optics & very basic things about electronic
 circuits: another perspect to look at _Electromagnetism_.  
-Time scale: electronics from 2014-27 to 2014-32, and optics 2014-33 to
+Time scale: electronics from 2014-27 to 2014-30, and optics 2014-31 to
 2014-38.  
 - Ohm’s law, capacitors, inductors, using complex numbers to calculate their effects
 - Transistors, diodes (how these actually work comes later)
@@ -128,8 +128,8 @@ weeks|PMath|CMech| Elec| SM&T| Opt | EM  | QM  | PP
 28|1|1|1| | | | |1
 29|1|1|1| | | | |1
 30|1|1|1| | | | |1
-31|1|1|1| | | | |1
-32|1|1|1| | | | |1
+31|1|1| | |1| | |1
+32|1|1| | |1| | |1
 33|1|1| |1|1| | |
 34|1|1| |1|1| | |
 35|1|1| |1|1| | |
