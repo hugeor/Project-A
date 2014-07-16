@@ -57,7 +57,7 @@ Time scale: from 2014-27 to 2014-38.
 
 Resources:  
 1. [A short course on Classical Mechanics by Prof. J. J. Binney](http://www-thphys.physics.ox.ac.uk/user/JamesBinney/cmech.pdf)  
-2. [An intermediate level course on Analytical Classical Dynamics by R. Fitzpatrick, Univ. of Texas, Austin](http://farside.ph.utexas.edu/teaching/336k/lectures/)  
+2. [An intermediate level course on Analytical Classical Dynamics by R. Fitzpatrick, Univ. of Texas, Austin](http://farside.ph.utexas.edu/teaching/336k/lectures/)(From *Two-Body Dynamics* to *Coupled Oscillations*.)  
 3. ~~[新概念物理教程.力学](http://book.douban.com/subject/1614977/)~~  
 4. ~~[力学15讲](http://book.douban.com/subject/6313269/)~~  
 5. ~~[力学](http://book.douban.com/subject/3349046/)~~  
