@@ -1,0 +1,162 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usepackage{utopia} %font utopia imported
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\graphicspath{ {images/} }
+
+\usetheme{Antibes}
+\usecolortheme{beaver}
+
+\usepackage{xeCJK}
+\setCJKmainfont{simsun.ttf}
+\setCJKsansfont{simhei.ttf}
+\setCJKmonofont{simfang.ttf}
+
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title[About] %optional
+{The Road to Reality}
+
+\subtitle{A Brief Guide to Active Endevour of Last Year}
+
+\author[Hunc]{胡乃超}
+\institute[SPE]{Department of Physics\\
+School of Physics and Engineering}
+
+
+\date[SYSU 2014] % (optional)
+{引力波楼, Sep 2014}
+
+%\logo{\includegraphics[height=1.5cm]{lion-logo.png}}
+
+%End of title page configuration block
+%------------------------------------------------------------
+
+
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the 
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+%------------------------------------------------------------
+
+
+\begin{document}
+
+%The next statement creates the title page.
+\frame{\titlepage}
+
+
+%---------------------------------------------------------
+%This block of code is for the table of contents after
+%the title page
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+%---------------------------------------------------------
+
+
+\section{Individualities and personal tastes}
+
+%---------------------------------------------------------
+%Changing visivility of the text
+\begin{frame}
+\frametitle{Sample frame title}
+This is a text in second frame. For the sake of showing an example.
+
+\begin{itemize}
+    \item<1-> Text visible on slide 1
+    \item<2-> Text visible on slide 2
+    \item<3> Text visible on slides 3
+    \item<4-> Text visible on slide 4
+\end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+%Example of the \pause command
+\begin{frame}
+In this slide \pause
+
+the text will be partially visible \pause
+
+And finally everything will be there
+\end{frame}
+%---------------------------------------------------------
+
+\section{Several expeditions undertaken in physics}
+\subsection{Theoretical physics}
+%---------------------------------------------------------
+%Highlighting text
+\begin{frame}
+\frametitle{Sample frame title}
+
+In this slide, some important text will be
+\alert{highlighted} beause it's important.
+Please, don't abuse it.
+
+\begin{block}{Remark}
+Sample text
+\end{block}
+
+\begin{alertblock}{Important theorem}
+Sample text in red box
+\end{alertblock}
+
+\begin{examples}
+Sample text in green box. "Examples" is fixed as block title.
+\end{examples}
+\end{frame}
+%---------------------------------------------------------
+\subsection{Computational physics}
+\subsection{Experimental physics}
+
+%---------------------------------------------------------
+%Two columns
+\begin{frame}
+\frametitle{Two-column slide}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+This is a text in first column.
+$$E=mc^2$$
+\begin{itemize}
+\item First item
+\item Second item
+\end{itemize}
+
+\column{0.5\textwidth}
+This text will be in the second column
+and on a second tought this is a nice looking
+layout in some cases.
+\end{columns}
+\end{frame}
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+%Thanks
+\section{}
+\begin{frame}%[plain]
+	\begin{center}
+	\Huge{\alert{Thanks for your attention!}}\par
+	\Huge{\textit{Any questions?}}
+    \end{center}
+\end{frame}
+
+\end{document}
