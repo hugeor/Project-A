@@ -86,79 +86,85 @@ This is a text in second frame. For the sake of showing an example.
 \end{frame}
 
 %---------------------------------------------------------
+%=========================================================
 
-
-%---------------------------------------------------------
-%Example of the \pause command
-\begin{frame}
-In this slide \pause
-
-the text will be partially visible \pause
-
-And finally everything will be there
-\end{frame}
-%---------------------------------------------------------
 
 %=========================================================
 \section{Several expeditions undertaken in physics}
 
 \subsection{Theoretical physics}
 %---------------------------------------------------------
-%Highlighting text
 \begin{frame}
-\frametitle{Sample frame title}
+  \frametitle{Cosmology}
 
-In this slide, some important text will be
-\alert{highlighted} beause it's important.
-Please, don't abuse it.
+  In this slide, only important text will be from
+  \alert{Ryden} beause it's more than half done.
 
-\begin{block}{Remark}
-Sample text
-\end{block}
+  \begin{alertblock}{Important theorem}
+    Sample text in red box
+  \end{alertblock}
 
-\begin{alertblock}{Important theorem}
-Sample text in red box
-\end{alertblock}
+\end{frame}
 
-\begin{examples}
-Sample text in green box. "Examples" is fixed as block title.
-\end{examples}
+\begin{frame}
+  \frametitle{Particle physics}
+  Something about spinors.
+  Book : Griffins Introduction to particle physics.\par  
+  Maybe I should not mention any of it here.
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{String theory}
+  If I can finish Ch5 and Ch6, then it's gonna to be much more
+  interesting for a briefing :(
+  
 \end{frame}
 %---------------------------------------------------------
+
 \subsection{Computational physics}
+%---------------------------------------------------------
+\begin{frame}
+  \frametitle{Algorithms and computations}
+  \begin{columns}
+    \column{0.5\textwidth}
+    This is a text in first column.
+    $$E=mc^2$$
+    \begin{itemize}
+    \item First item
+    \item Second item
+    \end{itemize}
+
+    \column{0.5\textwidth}
+    This text will be in the second column
+    and on a second tought this is a nice looking
+    layout in some cases.
+  \end{columns}
+  
+\end{frame}
+%---------------------------------------------------------
 
 \subsection{Experimental physics}
 %---------------------------------------------------------
-%Two columns
 \begin{frame}
-\frametitle{Two-column slide}
-
-\begin{columns}
-
-\column{0.5\textwidth}
-This is a text in first column.
-$$E=mc^2$$
-\begin{itemize}
-\item First item
-\item Second item
-\end{itemize}
-
-\column{0.5\textwidth}
-This text will be in the second column
-and on a second tought this is a nice looking
-layout in some cases.
-\end{columns}
+  \frametitle{Axions}
+  \begin{itemize}
+  \item<1-> Sikivie Experiment (19??)
+  \item<2-> CARRACK Design (20??)
+  \item<3-> New ideas? More stable detectors?
+  \end{itemize}
 \end{frame}
 %---------------------------------------------------------
 
 %=========================================================
 %Thanks
 \section{}
-\begin{frame}%[plain]
-	\begin{center}
-	\Huge{\alert{Thanks for your attention!}}\par
-	\Huge{\textit{Any questions?}}
-    \end{center}
+\begin{frame}
+  \begin{center}
+    \Huge{\alert{Thanks for your attention!}}\par
+    \Huge{\textit{Any questions?}}
+  \end{center}
+  
 \end{frame}
 
 \end{document}
