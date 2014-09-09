@@ -72,17 +72,18 @@ School of Physics and Engineering}
 \section{Individualities and personal tastes}
 
 %---------------------------------------------------------
-%Changing visivility of the text
 \begin{frame}
-%\frametitle{Sample frame title}
-This is a text in second frame. For the sake of showing an example.
+  \frametitle{}
+  I'd like to write something philosophical here, explaining why I
+  try for all sort of things but CUPT...\par
+  The problem is I don't know how...
 
-\begin{itemize}
-    \item<1-> Text visible on slide 1
-    \item<2-> Text visible on slide 2
-    \item<3> Text visible on slides 3
-    \item<4-> Text visible on slide 4
-\end{itemize}
+  \begin{itemize}
+  \item<1-> Observing a lack of understanding to fundamental of
+    physics while the rest blossoming is unsettling.
+  \item<2-> The beauty of ``Euclidean'' is more than tempting.
+  \end{itemize}
+  
 \end{frame}
 
 %---------------------------------------------------------
@@ -96,13 +97,24 @@ This is a text in second frame. For the sake of showing an example.
 %---------------------------------------------------------
 \begin{frame}
   \frametitle{Cosmology}
-
-  In this slide, only important text will be from
-  \alert{Ryden} beause it's more than half done.
-
-  \begin{alertblock}{Important theorem}
-    Sample text in red box
+    \begin{alertblock}{Friedmann equations}
+      \begin{onlyenv}<1>
+        $$H^2 = \frac{8\pi G}{3}\epsilon-\frac{k}{R_0^2a^2}$$
+      \end{onlyenv}
+      \begin{onlyenv}<2>
+        $$\frac{H^2}{H_0^2} =
+        \frac{\Omega_{r,0}}{a^4} + \frac{\Omega_{m,0}}{a^3} +
+        \Omega_{\Lambda,0} + \frac{1-\Omega_0}{a^2}$$
+      \end{onlyenv}
   \end{alertblock}
+  \begin{onlyenv}<3>
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.6\textwidth]{avst}
+      \caption{The scale factor $a$ as a function of time $t$ in
+        Benchmark Model.}
+    \end{figure}
+  \end{onlyenv}
 
 \end{frame}
 
@@ -149,8 +161,25 @@ This is a text in second frame. For the sake of showing an example.
 \begin{frame}
   \frametitle{Axions}
   \begin{itemize}
-  \item<1-> Sikivie Experiment (19??)
-  \item<2-> CARRACK Design (20??)
+  \item<1-> Sikivie Experiment (1983)
+    \begin{onlyenv}<1>
+      \begin{figure}
+        \caption{Feynman diagram for Primakoff effect, where $e$ for
+          electrons, $I$ for ions.} 
+        \centering
+        \includegraphics[width=0.5\textwidth]{prima}
+      \end{figure}
+    \end{onlyenv}
+  \item<2-> CARRACK Design (2001)
+    \begin{onlyenv}<2>
+      \begin{figure}
+        \centering
+    \includegraphics[width=0cm]{jsche}
+    \caption{General schematic of CARRACK experiment utilizing Rydberg
+      atoms to recover single photons generated in the microwave
+      cavity.} 
+      \end{figure}
+    \end{onlyenv}
   \item<3-> New ideas? More stable detectors?
   \end{itemize}
 \end{frame}
