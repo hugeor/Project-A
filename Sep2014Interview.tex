@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{utopia} %font utopia imported
-
+\usefonttheme{professionalfonts}
 \usepackage{graphicx}
 \usepackage{wrapfig}
 
@@ -73,15 +73,18 @@ School of Physics and Engineering}
 
 %---------------------------------------------------------
 \begin{frame}
-  \frametitle{}
-  I'd like to write something philosophical here, explaining why I
-  try for all sort of things but CUPT...\par
-  The problem is I don't know how...
+  \frametitle{A prelude}
+  I'd like to make some statements first to explain why I find
+  the fundamental part of advanced physics more intriguing than
+  others.\par 
 
   \begin{itemize}
-  \item<1-> Observing a lack of understanding to fundamental of
-    physics while the rest blossoming is unsettling.
-  \item<2-> The beauty of ``Euclidean'' is more than tempting.
+  \item<1-> Ignoring the lack of understanding to foundations of
+    physics is unsettling.% That could keep one awake at night.
+  \item<2-> Theories, like general relativity, that carries no less
+    beauty than ``Euclid's Elements'' is more than tempting.
+  \item<3-> Since I have decided to become nerdy, what's to prevent me
+    from going further?
   \end{itemize}
   
 \end{frame}
@@ -97,39 +100,51 @@ School of Physics and Engineering}
 %---------------------------------------------------------
 \begin{frame}
   \frametitle{Cosmology}
-    \begin{alertblock}{Friedmann equations}
+    \begin{alertblock}{Friedmann equation}
       \begin{onlyenv}<1>
         $$H^2 = \frac{8\pi G}{3}\epsilon-\frac{k}{R_0^2a^2}$$
       \end{onlyenv}
-      \begin{onlyenv}<2>
+      \begin{onlyenv}<2-3>
         $$\frac{H^2}{H_0^2} =
         \frac{\Omega_{r,0}}{a^4} + \frac{\Omega_{m,0}}{a^3} +
         \Omega_{\Lambda,0} + \frac{1-\Omega_0}{a^2}$$
       \end{onlyenv}
   \end{alertblock}
-  \begin{onlyenv}<3>
-    \begin{figure}
-      \centering
-      \includegraphics[width=0.6\textwidth]{avst}
-      \caption{The scale factor $a$ as a function of time $t$ in
-        Benchmark Model.}
-    \end{figure}
-  \end{onlyenv}
-
-\end{frame}
-
-\begin{frame}
-  \frametitle{Particle physics}
-  Something about spinors.
-  Book : Griffins Introduction to particle physics.\par  
-  Maybe I should not mention any of it here.
   
+  \begin{itemize}
+  \item<3> Large scale uniformity (horizon problem)
+  \item<3> Flatness problem
+  \item<3> The monopole problem
+  \end{itemize}
+  The \textit{inflation theory} solves the above problems with a natural
+  approach.
+
 \end{frame}
 
+%\begin{frame}
+ % \frametitle{Particle physics}
+  %Something about spinors.
+  %Book : Griffins Introduction to particle physics.\par  
+  %Maybe I should not mention any of it here.
+  %
+%\end{frame}
+
 \begin{frame}
-  \frametitle{String theory}
-  If I can finish Ch5 and Ch6, then it's gonna to be much more
-  interesting for a briefing :(
+  \frametitle{String theory: compactification}
+  \begin{alertblock}{Poission equation in D-dimensional spacetime}
+    $$\nabla^2V_g^{(D)} = 4\pi G^{(D)}\rho_m$$ 
+  \end{alertblock}
+  \begin{columns}
+    \column{0.5\textwidth}
+    By maintaining the dimension of $G^{(D)}\rho_m$, one obtain
+    $$(\ell_P^{(D)})^{D-2} = (\ell_P)^2\frac{G^{(D)}}{G}.$$
+
+    \column{0.5\textwidth}
+    Place a mass distribution in extra dimensions, and then 
+    $$\frac{G^{(D)}}{G} = V_C.$$
+  \end{columns} \pause
+  Combining the groundwork and solving for $\ell_C$, we have
+  $$\ell_C = \ell_P^{(D)}(\frac{\ell_P^{(D)}}{\ell_P})^{\frac{2}{D-4}}.$$
   
 \end{frame}
 %---------------------------------------------------------
@@ -174,9 +189,9 @@ School of Physics and Engineering}
     \begin{onlyenv}<2>
       \begin{figure}
         \centering
-    \includegraphics[width=0cm]{jsche}
-    \caption{General schematic of CARRACK experiment utilizing Rydberg
-      atoms to recover single photons generated in the microwave
+    \includegraphics[width=0.8\textwidth]{jsche}
+    \caption{Schematic of CARRACK experiment utilizing Rydberg
+      atoms to recover photons generated in the microwave
       cavity.} 
       \end{figure}
     \end{onlyenv}
