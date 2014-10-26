@@ -28,7 +28,7 @@ Time scale: from 2014-27 to 2014-36.
    Topology.(You may be surprised to learn that they do play a role indeed in physics!)
 * ~~Algebraic equations. Approximation techniques. Series expansions: the Taylor series.~~
 * ~~Solving equations with complex numbers. Trigonometry.~~
-* ~~Infinitesimals. Differentiation. Integration. Differential equations. Linear equations.~~
+* ~~Infinitesimals. Differentiation. Integration. Differential equations. Linear equations.~~n
 * The Fourier transformation. The use of complex numbers. Convergence of series.
 * The complex plane. Cauchy theorems and contour integration (now this is fun).
 * The Gamma function (enjoy studying its properties). Generalized functions.
@@ -93,7 +93,8 @@ Time scale: from 2014-33 to 2014-44.
 - The Boltzmann distribution
 - The Carnot cycle. Entropy. Heat engines
 - Phase transitions. Thermodynamical models
-- The Ising Model (postpone techniques to solve the 2-dimensional Ising Model to later)
+- The Ising Model (postpone techniques to solve the 2-dimensional
+  Ising Model to later)  
 - Planck’s radiation law (as a prelude to Quantum Mechanics)
 
 Resources:  
@@ -150,3 +151,5 @@ weeks|PMath|CMech| Elec| SM&T| Opt | EM  | QM  | PP
 50| | | | | |1|1|
 51| | | | | | | |
 52| | | | | | | |
+
+                   
