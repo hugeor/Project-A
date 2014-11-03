@@ -7,7 +7,9 @@
 
 \usepackage[T1]{fontenc} % if needed
 
-
+\usepackage{amsthm}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
 
 \title{\boldmath A Brief Introduction to Geometry}
 
@@ -44,7 +46,7 @@
 \acknowledgments
 These notes are far from original. They borrow heavily both from the books 
 and the online resources listed described below. 
-The first three were frequently consulted in the preparation of these
+The first four were frequently consulted in the preparation of these
 notes, the next six are other relativity texts which I have found to
 be consulted as further reinforcement, and the last three 
 are mathematical background references.
@@ -58,6 +60,12 @@ are mathematical background references.
   (Cambridge). This is a very nice introductory text. Especially
   useful if you are overwhelmed by the new definition of vectors and
   tangent vectors.
+\item Sean M. Carroll, \textit{Lecture Notes on General
+    Relativity}. These notes are lectures on introductory general
+  relativity for beginning graduate students in physics and are
+  basicly the draft of the later book, not very thorough on geometry
+  though. PDF are available at:
+  \url{http://xxx.lanl.gov/pdf/gr-qc/9712019v1}  
 \item John C. Baez, Javier P. Muniain, \textit{Gauge Fields, Knots,
     and Gravity} (World Scientific). Slightly more mathematical, but
   very accessible.
@@ -79,12 +87,12 @@ are mathematical background references.
   \textit{Problem Book in Relativity and Gravitation} (Princeton). A
   sizeable collection of problems in all areas of GR, with fully
   worked solutions.
-\item Gerard 't Hooft, \textit{INTRODUCTION TO GENERAL RELATIVITY}. A
+\item Gerard 't Hooft, \textit{Introduction to General Relativity}. A
   review of GR theory. Very brief thus rather demanding. PDF can be
   found at:
   \url{http://www.staff.science.uu.nl/~hooft101/lectures/genrel_2013.pdf}
-\item Mikio Nakahara, \textit{GEOMETRY, TOPOLOGY AND PHYSICS} (Taylor
-  & Francis). A nice text introduces the ideas and techniques of
+\item Mikio Nakahara, \textit{Geometry, Topology and Physics} (Taylor
+  \& Francis). A nice text introduces the ideas and techniques of
   differential geometry and topology at a level suitable for
   postgraduate students and researchers in these fields.
 \item R.Aldrovandi, J.G.Pereira, \textit{An Introduction to
@@ -102,10 +110,108 @@ are mathematical background references.
 
 \section{Topological Spaces}
 \label{s:topo}
+Before being able to define a manifold, we need to introduce the
+notion of a topological space. This can be defined after a topology is defined.
 
+Let $X$ be a set and $T$ be a family of subsets of $X$. Elements of $T$
+are called open sets. And $T$ is called a \textbf{topology} on X if: 
+\begin{itemize}
+\item The union of any number of open subsets is an open set.
+\item The intersection of a finite number of open subsets is an open set.
+\item Both $X$ itself, and the empty set $\emptyset$, are open.
+\end{itemize}
+Set $X$ with a given topology defined on it, i.e. the pair $(X,T)$, is a
+\textbf{topological space}. An open set containing a point $x\in X$ is
+called a \textbf{neighbourhood} of $x$. The complement of an open set is \textbf{closed}.
+\par
+The use of a topology is that it allows us to define continuous
+functions. A function $f: X \mapsto Y$ from one topological space to
+another is defined to be \textbf{continuous} if, given any open set $U
+\subseteq Y$, the inverse image $f^{-1}U \subseteq X$ is open. (The
+above definition is equivalent to the epsilon-delta definition.)\par
+The idea of a manifold is that, like a globe, we can cover it with
+patches that look like just like $\mathbb{R}^n$. A \textbf{cover} of a set $A$
+in a topological space $(X,T)$ is a family of sets ${U_\alpha}$ such
+that $A\subset\cup_{\alpha}U_{\alpha}$. A cover ${U_{\alpha}}$ of $A$
+in a topological space $(X,T)$ is called open if all $U_{\alpha}$ are
+open in $(X,T)$. A family of sets ${V_{\alpha}}$ is called a subcover
+of $A$ in $(X,T)$ if
+\begin{itemize}
+\item ${V_{\alpha}}$ is a subset of the cover ${U_{\alpha}}$ of $A$;
+\item ${V_{\alpha}}$ is a cover of $A$.
+\end{itemize}
+A topological space $(X,T)$ is said to be \textbf{compact} if every open
+cover of $(X,T)$ has a finite subcover.\par
+Some further concepts need to be introduced. First, we define a basis
+for the topology of $X$ as some subset of all possible open sets in
+$T$, such that by taking intersections and unions of the members of
+the subset, we can generate all possible open subsets in $T$.\par A
+topological space $(X,T_X)$ said to satisfy the \textbf{First axiom of
+  separation} (or to be $\mathbf{T_1}$ \textbf{space}) if for all two
+distinct points $x$ and $y$ in $(X,T_X)$ there exists an open
+neighborhood $O_x$ of the point $x$ such that $y\not\in O_x$ and there
+exists a open neighbourhood $O_y$ of the point y such that $x\not\in
+O_y$.\par And we now may define a Hausdorff Space. A topological space
+$(X,T_X)$ is a \textbf{Hausdorff space} (or a $\mathbf{T_2}$\textbf{-space} or
+a separated space) if all two distinct points in $X$ have two disjoint
+neighbourhoods. The great mathematician and geometer Michael Atiyah gave a nice
+colloquial definition: ``A topological space is Hausdorff if the points
+can be housed off.'' 
 \section{Manifolds}
 \label{s:mani}
-
+We can now give a formal definition of a \textbf{smooth $n$-manifold}
+$M^n$, with a smooth atlas of charts, as
+\begin{itemize}
+\item A topological space $(X, T_X)$ with covers
+\item A collection (called \textbf{atlas}) of maps $\phi_i: U_i
+  \mapsto \mathbb{R}^n$ called \textbf{charts}, which define a $1-1$
+  relation between points in $U_i$ and points in an open ball in
+  $\mathbb{R}^n$ such that the \textbf{transition function}
+  $\phi_{\alpha}\circ \phi^{-1}_{\beta}$ is smooth where it is
+  defined.
+\end{itemize}
+\begin{remark}The idea is to divide the whole $n$-manifold into
+  patches that looks like $\mathbb{R}^n$. The map $\phi_i$ that
+  connects both is the notion of choosing coordinates on the patch
+  $U_i$.\par
+  The idea is to divide the whole $n$-manifold into patches that looks
+  like $\mathbb{R}^n$. The map $\phi_i$ that connects both is the
+  notion of choosing coordinates on the patch $U_i$.
+\end{remark}
+\begin{remark}
+  We are now allowed to tell if a function on $M^n$ is smooth using
+  charts, since we defined a smooth manifold. (A \textbf{topological
+    manifold} only require its transition function to be continuous.)
+  A function is said to be $smooth$ if $\forall \alpha,
+  f\circ\phi_{alpha}^{-1}: \mathbb{R}^n\mapsto\mathbb{R}$ is
+  smooth. Also, we will always assume our manifold are ``Hausdorff''
+  and ``paracompact''.%to be explained
+\end{remark}
+\begin{remark}
+  Consider points lie in the intersection $V$ of two patches and let
+  $\phi_1$ and $\phi_2$ be the two charts defined respectively on the
+  patches. We are therefore enabled to go back and forth between the
+  two copies of $\mathbb{R}^n$. Suppose that we choose coordinates
+  $x^i$ on the first copy, and coordinates $\tilde{x}^i$ on the second
+  copy. Thus we obtain two function: $x^i =
+  \phi_1\circ\phi_2^{-1}(\tilde{x}^j)$ and $\tilde{x}^i =
+  \phi_2\circ\phi_1^{-1}(x^j)$. When a neighbourhood instead of a
+  point is considered, we bound to ask the question of whether the
+  functions are smooth or not. Thus we are led to the notion of a
+  \textbf{differentiable manifold}, as being a manifold where the
+  coordinates covering any pair of overlapping patches are smooth,
+  differentiable functions of one another. And in practice, one tend
+  to assume everything is $C^{\infty}$ differentiable.
+\end{remark}\par
+Two atlases are said to be \textbf{compatible} if, wherever there are
+overlaps, the transition functions are smooth. It is not necessarily
+the case that the charts in one atlas are compatible with the charts
+in another atlas.\par
+One last concept on manifold is orientable manifolds. A manifold is
+said to be orientable if it admits an atlas such that in all
+overlapping regions between charts, the Jacobian of the relation
+between the coordinate systems satisfies$$det\left( \frac{\partial
+    x^i}{\partial\tilde{x}^j} \right)>0.$$ 
 \section{Vector Fields}
 \label{s:vefi}
 
