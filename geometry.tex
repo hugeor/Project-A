@@ -236,7 +236,7 @@ functions on a manifold $M$. The following batch of rules holds trivially:
   1 f &= f\\
   \alpha( \beta f) &= ( \alpha \beta ) f \\
   \alpha(f+g) &= \alpha f+ \alpha g \\
-  ( \alpha + \bata )f &= \alpha f + \beta f \\
+  ( \alpha + \beta )f &= \alpha f + \beta f \\
   f g &=g f,
 \end{align*}
 where $f, g, h \in C^{\infty}(M)$ and $\alpha, \beta \in \mathbb{R}$.
@@ -278,7 +278,36 @@ $Vect(\mathbb{R}^n)$. The functions $v^{\mu}$ are called the
 \textbf{components} of the vector field $v$.
 \subsection{Tangent Vectors}
 \label{sub:TV}
-
+A tangent vector should let us take the directional derivative at the
+point. Say given a vector field $v$ on $M$, we can take the derivative
+$v(f)$ and evaluate at the point $p$, for all $f \in
+C^{\infty}(M)$. Indeed, we can define $$v_p: C^{\infty}(M)\mapsto
+\mathbb{R}$$ by $$v_p(f)=v(f)(p).$$ And $v_p$ is the \textbf{tangent vector} at
+$p$. Following from section~\ref{sub:vefi}, $v_p$ has three basic properties:
+\begin{align*}
+  v_p (f+g) &= v_p(f) + v_p(g) \\
+  v_p(\alpha f) &= \alpha v_p(f) \\
+  v_p(f g) &= v_p(f)g(p) + f(p)v_p(g).
+\end{align*}
+Let $T_pM$, the \textbf{tangent space} at $p$, denote the set of all
+tangent vectors at $p\in M$. \par
+\begin{remark}
+  $\forall p\in M$, a vector field $v\in Vect(M)$ determines a tangent
+  vector $v_p\in T_pM$. Also, every tangent vector at $p$ is of the
+  form $v_p$ for some vector field or other.\par
+\end{remark}
+\begin{remark}
+  The dimension of $T_pM$ is $n$, the dimension of the manifold
+  $M$, since ${\partial_{\mu}}$ is a basis. \par
+\end{remark}
+Now consider a patch $U$ in the manifold $M^n$, for which a local
+coordinates $x^{\mu}$ or $x^{\nu '}$ is introduced. We can use the
+chain rule to convert between the two bases:$$v =
+v^{\mu}\partial_{\mu} = v^{\mu}\frac{\partial x^{\nu '}}{\partial
+  x^{\mu}}\partial_{\nu}\equiv v^{\nu '}\partial_{\nu '}.$$
+And we thus obtain the rule$$v^{\nu '} = v^{\mu}\frac{\partial x^{\nu '}}{\partial
+  x^{\mu}},$$ which is called \textbf{general coordinate
+  transformation}.\par
 
 
 
