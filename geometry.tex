@@ -11,7 +11,7 @@
 \theoremstyle{remark}
 \newtheorem{remark}{Remark}[section]
 
-\title{\boldmath A Brief Introduction to Geometry}
+\title{\boldmath Notes on Gravitation Part I: Geometry}
 
 
 %% %simple case: 2 authors, same institution
@@ -146,13 +146,13 @@ Some further concepts need to be introduced. First, we define a basis
 for the topology of $X$ as some subset of all possible open sets in
 $T$, such that by taking intersections and unions of the members of
 the subset, we can generate all possible open subsets in $T$.\par A
-topological space $(X,T_X)$ said to satisfy the \textbf{First axiom of
+topological space $(X,T)$ said to satisfy the \textbf{First axiom of
   separation} (or to be $\mathbf{T_1}$ \textbf{space}) if for all two
-distinct points $x$ and $y$ in $(X,T_X)$ there exists an open
+distinct points $x$ and $y$ in $(X,T)$ there exists an open
 neighborhood $O_x$ of the point $x$ such that $y\not\in O_x$ and there
 exists a open neighbourhood $O_y$ of the point y such that $x\not\in
 O_y$.\par And we now may define a Hausdorff Space. A topological space
-$(X,T_X)$ is a \textbf{Hausdorff space} (or a $\mathbf{T_2}$\textbf{-space} or
+$(X,T)$ is a \textbf{Hausdorff space} (or a $\mathbf{T_2}$\textbf{-space} or
 a separated space) if all two distinct points in $X$ have two disjoint
 neighbourhoods. The great mathematician and geometer Michael Atiyah gave a nice
 colloquial definition: ``A topological space is Hausdorff if the points
@@ -162,7 +162,7 @@ can be housed off.''
 We can now give a formal definition of a \textbf{smooth $n$-manifold}
 $M^n$, with a smooth atlas of charts, as
 \begin{itemize}
-\item A topological space $(X, T_X)$ with covers
+\item A topological space $(X, T)$ with covers
 \item A collection (called \textbf{atlas}) of maps $\phi_i: U_i
   \mapsto \mathbb{R}^n$ called \textbf{charts}, which define a $1-1$
   relation between points in $U_i$ and points in an open ball in
@@ -173,17 +173,14 @@ $M^n$, with a smooth atlas of charts, as
 \begin{remark}The idea is to divide the whole $n$-manifold into
   patches that looks like $\mathbb{R}^n$. The map $\phi_i$ that
   connects both is the notion of choosing coordinates on the patch
-  $U_i$.\par
-  The idea is to divide the whole $n$-manifold into patches that looks
-  like $\mathbb{R}^n$. The map $\phi_i$ that connects both is the
-  notion of choosing coordinates on the patch $U_i$.
+  $U_i$.
 \end{remark}
 \begin{remark}
   We are now allowed to tell if a function on $M^n$ is smooth using
   charts, since we defined a smooth manifold. (A \textbf{topological
     manifold} only require its transition function to be continuous.)
   A function is said to be $smooth$ if $\forall \alpha,
-  f\circ\phi_{alpha}^{-1}: \mathbb{R}^n\mapsto\mathbb{R}$ is
+  f\circ\phi_{\alpha}^{-1}: \mathbb{R}^n\mapsto\mathbb{R}$ is
   smooth. Also, we will always assume our manifold are ``Hausdorff''
   and ``paracompact''.%to be explained
 \end{remark}
@@ -207,14 +204,87 @@ Two atlases are said to be \textbf{compatible} if, wherever there are
 overlaps, the transition functions are smooth. It is not necessarily
 the case that the charts in one atlas are compatible with the charts
 in another atlas.\par
-One last concept on manifold is orientable manifolds. A manifold is
-said to be orientable if it admits an atlas such that in all
-overlapping regions between charts, the Jacobian of the relation
+One last concept on manifold to introduce is orientable manifolds. A
+manifold is said to be orientable if it admits an atlas such that in
+all overlapping regions between charts, the Jacobian of the relation
 between the coordinate systems satisfies$$det\left( \frac{\partial
-    x^i}{\partial\tilde{x}^j} \right)>0.$$ 
-\section{Vector Fields}
-\label{s:vefi}
+    x^i}{\partial\tilde{x}^j} \right)>0.$$
+\section{Vectors and Tangent Vectors}
+\label{s:VT}
+We now turn to a discussion of vectors and tensors on manifolds. We
+should begin this discussion by forgetting certain things about
+vectors that we learned in kindergarten. The vector concept was
+introduced with the notion of position vectors. All is good as long as
+one is only going to describe Euclidean space with Cartesian
+coordinates, but it's not a valid way defining a vector in general,
+like in a curved space, or even in a flat space equipped with
+non-cartesian coordinates.
+\subsection{Vector Fields}
+\label{sub:vefi}
+To introduce a new definition of vectors, we need some preparation
+first. Let's define vector fields on a manifold $M$ first. The key to
+defining vector fields on a manifold is o note that given a field of
+arrows, one can take directional derivative in the direction of the
+arrows. Let $C^{\infty}(M)$ be the set of smooth (real-valued)
+functions on a manifold $M$. The following batch of rules holds trivially:
+\begin{align*}
+  f +g &= g+f\\
+  f+(g+h)&=(f+g)+h\\
+  f(g h)&=(f g)h\\
+  f(g+h)&=f g+f h\\
+  (f+g)h&=f h+g h\\
+  1 f &= f\\
+  \alpha( \beta f) &= ( \alpha \beta ) f \\
+  \alpha(f+g) &= \alpha f+ \alpha g \\
+  ( \alpha + \bata )f &= \alpha f + \beta f \\
+  f g &=g f,
+\end{align*}
+where $f, g, h \in C^{\infty}(M)$ and $\alpha, \beta \in \mathbb{R}$.
+We thus know that $C^{\infty}(M)$ is a commutative algebra over the
+real numbers. And a \textbf{vector field} $v$ is defined to be a
+function from $C^{\infty}(M)$ to $C^{\infty}(M)$ satisfying the
+following properties:
+\begin{align*}
+  v(f+g)&=v(f)+v(g)\\
+  v(\alpha f)&=\alpha v(f)\\
+  v(f g)&=v(f) g+f v(g),
+\end{align*}
+$\forall f, g \in C^{\infty}(M)$ and $\alpha \in \mathbb{R}$. Here we
+have isolated all the basic rules a directional derivative operator
+should satisfy. And we have achieved this relying on no choice of
+coordinates on $M$!\par
+Let $Vect(M)$ be the collection of all vector fields on $M$. Given $v,
+w \in Vect(M), f, g \in C^{\infty}(M)$, we define $v+w$ by $$(v+w)(f) =
+v(f) + w(f),$$ and $g v$ by $$(g v)(f) = g v(f).$$ Then when the
+following rules:
+\begin{align*}
+  f(v + w) &= f v + f w\\
+  (f + g)v &= f v + g v\\
+  (f g)v &= f(g v)\\
+  1 v &= v,
+\end{align*}
+(here ``1'' denotes the constant function equal to 1 on all of $M$),
+we say that $Vect(M)$ is a \textbf{module over} $C^{\infty}(M)$.\par
+Consider the example of the vector fields ${\partial_\mu}$ on
+$\mathbb{R}^n$ that span $Vect(\mathbb{R}^n)$ as a module over
+$C^{\infty}(M)$. Every vector field on $\mathbb{R}^n$ is a linear
+combination of the form $$v = v^{\mu} \partial_{\mu},$$ for some
+function $v^{\mu} \in C^{\infty}(\mathbb{R}^n)$. We can readily see
+${\partial_{\mu}}$ on $\mathbb{R}^n$ are linearly independent, which
+implies every field $v$ on $\mathbb{R}^n$ has a unique representation
+as a linear combination $v^{\mu} \partial_{\mu}$. Thus the vector
+fields ${\partial_{\mu}}$ form a \textbf{basis} of
+$Vect(\mathbb{R}^n)$. The functions $v^{\mu}$ are called the
+\textbf{components} of the vector field $v$.
+\subsection{Tangent Vectors}
+\label{sub:TV}
 
+
+
+
+
+
+\section{$\ldots$}
 %======================================================================
 % \section{}
 % \label{sec:intro}

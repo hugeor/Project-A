@@ -5,7 +5,9 @@
     (LaTeX-add-labels
      "s:topo"
      "s:mani"
-     "s:vefi")
+     "s:VT"
+     "sub:vefi"
+     "sub:TV")
     (TeX-run-style-hooks
      "amsthm"
      "fontenc"
