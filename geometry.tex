@@ -209,7 +209,7 @@ manifold is said to be orientable if it admits an atlas such that in
 all overlapping regions between charts, the Jacobian of the relation
 between the coordinate systems satisfies$$det\left( \frac{\partial
     x^i}{\partial\tilde{x}^j} \right)>0.$$
-\section{Vectors and Tangent Vectors}
+\section{Tangent Vectors}
 \label{s:VT}
 We now turn to a discussion of vectors and tensors on manifolds. We
 should begin this discussion by forgetting certain things about
@@ -308,11 +308,27 @@ v^{\mu}\partial_{\mu} = v^{\mu}\frac{\partial x^{\nu '}}{\partial
 And we thus obtain the rule$$v^{\nu '} = v^{\mu}\frac{\partial x^{\nu '}}{\partial
   x^{\mu}},$$ which is called \textbf{general coordinate
   transformation}.\par
-
-
-
-
-
+With $T_pM$ defined, we may proceed further to define \textbf{tangent
+  bundle} (or sometimes called ``velocity space'') as the space of all
+possible tangent vectors at all possible 
+points:$$TM = \bigcup_{p\in M}T_pM.$$ The space is a manifold of
+dimension $2n$, since we now need to specify both the position and the
+direction of a element.\par
+Just before we go on to co-vectors, we can always introduce the
+notions physicists usually take in a non-coordinate based manner. We
+may introduce quantities ${E_a}^i$, then replace the simple basis
+with $$E_a = {E_a}^i\partial_i.$$ (Evidently $det({E_a}^i)\neq 0$
+iff this basis span the tangent space.) A common terminology is to
+refer to ${E_a}^i$ as the \textbf{inverse vielbein}. The coordinate
+index $i$ is commonly called a \textbf{world index}, while the index
+$a$ is commonly called a \textbf{tangent space index}.\par
+Transformations form ${E_a}^i$ to ${E'_a}^i$ can be described
+as: $$E_a\rightarrow E'_a = {\Lambda_a}^b(x)E_b.$$ Note that a vector
+$v = v^aE_a$ remain invariant under such transformations,
+thus $$v^a\rightarrow v^{a '} = {\Lambda^a}_b(x)v^b,$$
+where $${\Lambda^a}_b{\Lambda_c}^b = \delta^a_c.$$
+\section{Differential Forms}
+\subsection{$1$-Forms}
 \section{$\ldots$}
 %======================================================================
 % \section{}
