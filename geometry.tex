@@ -7,6 +7,7 @@
 
 \usepackage[T1]{fontenc} % if needed
 
+\usepackage{braket}
 \usepackage{amsthm}
 \theoremstyle{remark}
 \newtheorem{remark}{Remark}[section]
@@ -226,7 +227,8 @@ first. Let's define vector fields on a manifold $M$ first. The key to
 defining vector fields on a manifold is o note that given a field of
 arrows, one can take directional derivative in the direction of the
 arrows. Let $C^{\infty}(M)$ be the set of smooth (real-valued)
-functions on a manifold $M$. The following batch of rules holds trivially:
+functions on a manifold $M$. The following batch of rules holds
+trivially:
 \begin{align*}
   f +g &= g+f\\
   f+(g+h)&=(f+g)+h\\
@@ -254,8 +256,8 @@ have isolated all the basic rules a directional derivative operator
 should satisfy. And we have achieved this relying on no choice of
 coordinates on $M$!\par
 Let $Vect(M)$ be the collection of all vector fields on $M$. Given $v,
-w \in Vect(M), f, g \in C^{\infty}(M)$, we define $v+w$ by $$(v+w)(f) =
-v(f) + w(f),$$ and $g v$ by $$(g v)(f) = g v(f).$$ Then when the
+w \in Vect(M), f, g \in C^{\infty}(M)$, we define $v+w$ by $$(v+w)(f)
+= v(f) + w(f),$$ and $g v$ by $$(g v)(f) = g v(f).$$ Then when the
 following rules:
 \begin{align*}
   f(v + w) &= f v + f w\\
@@ -282,8 +284,9 @@ A tangent vector should let us take the directional derivative at the
 point. Say given a vector field $v$ on $M$, we can take the derivative
 $v(f)$ and evaluate at the point $p$, for all $f \in
 C^{\infty}(M)$. Indeed, we can define $$v_p: C^{\infty}(M)\mapsto
-\mathbb{R}$$ by $$v_p(f)=v(f)(p).$$ And $v_p$ is the \textbf{tangent vector} at
-$p$. Following from section~\ref{sub:vefi}, $v_p$ has three basic properties:
+\mathbb{R}$$ by $$v_p(f)=v(f)(p).$$ And $v_p$ is the \textbf{tangent
+  vector} at $p$. Following from section~\ref{sub:vefi}, $v_p$ has
+three basic properties:
 \begin{align*}
   v_p (f+g) &= v_p(f) + v_p(g) \\
   v_p(\alpha f) &= \alpha v_p(f) \\
@@ -297,38 +300,63 @@ tangent vectors at $p\in M$. \par
   form $v_p$ for some vector field or other.\par
 \end{remark}
 \begin{remark}
-  The dimension of $T_pM$ is $n$, the dimension of the manifold
-  $M$, since ${\partial_{\mu}}$ is a basis. \par
+  The dimension of $T_pM$ is $n$, the dimension of the manifold $M$,
+  since ${\partial_{\mu}}$ is a basis. \par
 \end{remark}
 Now consider a patch $U$ in the manifold $M^n$, for which a local
 coordinates $x^{\mu}$ or $x^{\nu '}$ is introduced. We can use the
 chain rule to convert between the two bases:$$v =
 v^{\mu}\partial_{\mu} = v^{\mu}\frac{\partial x^{\nu '}}{\partial
-  x^{\mu}}\partial_{\nu}\equiv v^{\nu '}\partial_{\nu '}.$$
-And we thus obtain the rule$$v^{\nu '} = v^{\mu}\frac{\partial x^{\nu '}}{\partial
-  x^{\mu}},$$ which is called \textbf{general coordinate
-  transformation}.\par
+  x^{\mu}}\partial_{\nu}\equiv v^{\nu '}\partial_{\nu '}.$$ And we
+thus obtain the rule$$v^{\nu '} = v^{\mu}\frac{\partial x^{\nu
+    '}}{\partial x^{\mu}},$$ which is called \textbf{general
+  coordinate transformation}.\par
 With $T_pM$ defined, we may proceed further to define \textbf{tangent
   bundle} (or sometimes called ``velocity space'') as the space of all
-possible tangent vectors at all possible 
-points:$$TM = \bigcup_{p\in M}T_pM.$$ The space is a manifold of
-dimension $2n$, since we now need to specify both the position and the
-direction of a element.\par
+possible tangent vectors at all possible points:$$TM = \bigcup_{p\in
+  M}T_pM.$$ The space is a manifold of dimension $2n$, since we now
+need to specify both the position and the direction of a element.\par
 Just before we go on to co-vectors, we can always introduce the
 notions physicists usually take in a non-coordinate based manner. We
 may introduce quantities ${E_a}^i$, then replace the simple basis
-with $$E_a = {E_a}^i\partial_i.$$ (Evidently $det({E_a}^i)\neq 0$
-iff this basis span the tangent space.) A common terminology is to
-refer to ${E_a}^i$ as the \textbf{inverse vielbein}. The coordinate
-index $i$ is commonly called a \textbf{world index}, while the index
-$a$ is commonly called a \textbf{tangent space index}.\par
+with $$E_a = {E_a}^i\partial_i.$$ (Evidently $det({E_a}^i)\neq 0$ iff
+this basis span the tangent space.) A common terminology is to refer
+to ${E_a}^i$ as the \textbf{inverse vielbein}. The coordinate index
+$i$ is commonly called a \textbf{world index}, while the index $a$ is
+commonly called a \textbf{tangent space index}.\par
 Transformations form ${E_a}^i$ to ${E'_a}^i$ can be described
 as: $$E_a\rightarrow E'_a = {\Lambda_a}^b(x)E_b.$$ Note that a vector
 $v = v^aE_a$ remain invariant under such transformations,
 thus $$v^a\rightarrow v^{a '} = {\Lambda^a}_b(x)v^b,$$
 where $${\Lambda^a}_b{\Lambda_c}^b = \delta^a_c.$$
 \section{Differential Forms}
-\subsection{$1$-Forms}
+While they are somewhat abstract, differential forms are a powerful
+unifying notion.
+\subsection{$\mathbf{1}$-forms}
+\label{sub:1form}
+We start with $1$-forms. $1$-forms are like a manifold version of
+gradients. On
+$\mathbb{R}^n$, the gradient of a function is a vector field, a dot
+product of $\nabla f$ and $v$. However, one needs a metric to perform
+such a dot product. So we need reproduce certain properties of gradient on
+arbitrary manifolds to obtain the generalized operator. The essence of
+a vector field map is linearity, which we shall stretch a bit. A
+$\mathbf{1}$\textbf{-form} on any manifold is defined as a map form $Vect(M)$ to
+$C^{\infty}(M)$ that is linear over $C^{\infty}(M)$. Mathematically,
+given a vector field $v$, $1$-form $\omega$ satisfies $\forall g\in
+C^{\infty}(M),$ 
+\begin{align*}
+  \omega(v+w) &= \omega(v) + \omega(w),\\
+  \omega(g v) &= g \omega(v).
+\end{align*}
+And we denote $\Omega^1(M)$ the space of all $1$-forms on a manifold $M$.
+\subsubsection{An Example: Cotangent Vectors}
+\label{1f:e}
+
+
+
+
+
 \section{$\ldots$}
 %======================================================================
 % \section{}

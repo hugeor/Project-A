@@ -7,9 +7,12 @@
      "s:mani"
      "s:VT"
      "sub:vefi"
-     "sub:TV")
+     "sub:TV"
+     "sub:1form"
+     "1f:e")
     (TeX-run-style-hooks
      "amsthm"
+     "braket"
      "fontenc"
      "T1"
      "jheppub"
