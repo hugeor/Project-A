@@ -8,8 +8,7 @@
      "s:VT"
      "sub:vefi"
      "sub:TV"
-     "sub:1form"
-     "1f:e")
+     "sub:1form")
     (TeX-run-style-hooks
      "amsthm"
      "braket"
